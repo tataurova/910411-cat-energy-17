@@ -1,5 +1,5 @@
 .page-main__header {
-  font-family: "Oswald", sans-serif;
+  font-family: $font-family--header;
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
@@ -9,7 +9,7 @@
 }
 
 .page-main__title {
-  font-family: "Oswald", sans-serif;
+  font-family: $font-family--header;
   font-weight: 400;
   font-size: 14px;
   line-height: 14px;
@@ -20,13 +20,52 @@
 }
 
 .page-main__link {
-  margin-bottom: 22px;
+  margin: 0 auto;
+  z-index: 100;
 }
 
 .page-main__title-picture {
-  margin-top: -273px;
+  margin-top: -300px;
 }
 
 .page-main__slim {
   margin-bottom: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-main__header,
+  .page-main__title {
+    text-align: left;
+    color: #111111;
+  }
+
+  .page-main__header {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .page-main__title {
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 48px;
+  }
+
+  .page-main__title-picture {
+    margin-top: -100px;
+    margin-left: 180px;
+    z-index: 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .page-main__link {
+    margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-main__title-picture {
+    margin-left: 30px;
+    margin-top: 0;
+  }
 }

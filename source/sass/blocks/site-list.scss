@@ -1,9 +1,8 @@
 .site-list {
-  font-family: "Oswald", sans-serif;
+  font-family: $font-family--header;
   font-size: 20px;
   line-height: 20px;
   color: #111111;
-  list-style: none;
   text-align: center;
 }
 
@@ -17,4 +16,18 @@
   padding-bottom: 24px;
   border-top: 1px solid $block-background;
   border-bottom: 1px solid $block-background;
+}
+
+@media (min-width: $tablet-width) {
+  .site-list__item {
+    border: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-list {
+    padding-left: 133px;
+    padding-right: 133px;
+    box-sizing: border-box;
+  }
 }

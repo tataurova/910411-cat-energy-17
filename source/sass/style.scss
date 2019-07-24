@@ -1,14 +1,22 @@
 @import "variables.scss";
 @import "normalize.scss";
+@import "blocks/page-container.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/index-nav.scss";
+@import "blocks/page-header.scss";
 @import "blocks/site-list.scss";
 @import "blocks/page-main.scss";
 @import "blocks/button.scss";
 @import "blocks/wrapper-title.scss";
+@import "blocks/title-index.scss";
+@import "blocks/wrapper-title-text.scss";
+@import "blocks/wrapper-title-block.scss";
 @import "blocks/cat-program.scss";
 @import "blocks/work-principle.scss";
 @import "blocks/page-footer.scss";
 @import "blocks/page-catalog.scss";
 @import "blocks/catalog.scss";
+@import "blocks/wrapper-cat-program.scss";
 
 @font-face {
   font-family: "Oswald";
@@ -42,3 +50,14 @@ input[type="radio"].visually-hidden {
   border: 0;
   clip-path: inset(100%);
 }
+
+body {
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+}
+
+/* временно для визуализации
+body > * { background: rgba(255, 0, 0, 0.3); } body > * > * { background: rgba(255, 255, 0, 0.3); }
+body > * > * > * { background: rgba(0, 0, 255, 0.3); } body > * > * > * > *
+{ background: rgba(0, 255, 255, 0.3); } */
