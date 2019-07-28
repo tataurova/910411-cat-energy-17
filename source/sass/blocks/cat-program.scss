@@ -7,7 +7,7 @@
 }
 
 .cat-program__header {
-  font-family: "Oswald", sans-serif;
+  font-family: $font-family--header;
   font-weight: 400;
   font-size: 24px;
   line-height: 37px;
@@ -17,7 +17,7 @@
 }
 
 .cat-program__intro {
-  font-family: "Arial", "Helvetica", sans-serif;
+  font-family: $font-family--text;
   font-size: 14px;
   line-height: 18px;
   color: #444444;
@@ -27,9 +27,22 @@
 
 .cat-program__catalog-reference {
   text-decoration: none;
-  font-family: "Oswald", sans-serif;
+  font-family: $font-family--header;
   font-size: 16px;
   line-height: 16px;
   color: #111111;
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .cat-program {
+    width: 708px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .cat-program {
+    width: 400px;
+    margin-bottom: 0;
+  }
 }

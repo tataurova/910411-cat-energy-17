@@ -1,5 +1,5 @@
 .page-catalog__header {
-  font-family: "Oswald", sans-serif;
+  font-family: $font-family--header;
   font-weight: 400;
   font-size: 36px;
   line-height: 60px;
@@ -10,4 +10,12 @@
   padding-bottom: 35px;
   border-top: 1px solid $block-background;
   border-bottom: 1px solid $block-background;
+}
+
+@media (min-width: $tablet-width) {
+  .page-catalog__header {
+    font-size: 60px;
+    line-height: 60px;
+    border: none;
+  }
 }

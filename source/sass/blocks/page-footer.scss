@@ -2,18 +2,26 @@
   background-color: $block-background;
   padding-top: 39px;
   padding-bottom: 31px;
-  padding-left: 20px;
-  padding-right: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
 .social__list {
   list-style: none;
+  display: flex;
 }
 
 .copyright__link {
-  font-family: "Arial", "Helvetica", sans-serif;
+  font-family: $font-family--text;
   font-size: 16px;
   line-height: 16px;
   color: #444444;
   text-decoration: none;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }

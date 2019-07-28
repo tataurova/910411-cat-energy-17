@@ -1,0 +1,54 @@
+body {
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+}
+
+.page-header,
+.page-main,
+.page-catalog,
+.page-footer {
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header,
+  .page-main,
+  .page-catalog,
+  .page-footer {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header,
+  .page-main,
+  .page-catalog,
+  .page-footer {
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+}
+
+/* временно для визуализации
+body > * { background: rgba(255, 0, 0, 0.3); } body > * > * { background: rgba(255, 255, 0, 0.3); }
+body > * > * > * { background: rgba(0, 0, 255, 0.3); } body > * > * > * > *
+{ background: rgba(0, 255, 255, 0.3); } */
+
+.visually-hidden,
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: -1px;
+  margin: -1px;
+  padding: 0;
+  white-space: nowrap;
+  border: 0;
+  clip-path: inset(100%);
+}

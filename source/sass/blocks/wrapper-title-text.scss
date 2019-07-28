@@ -1,0 +1,25 @@
+.wrapper-title-text {
+  background-image: url("../img/index-background-mobile@1x.jpg");
+  background-color: $accent-color;
+  background-repeat: no-repeat;
+  width: 280px;
+  height: 270px;
+  margin: 0 auto;
+  margin-bottom: 140px;
+}
+
+@media (min-width: $tablet-width) {
+  .wrapper-title-text {
+    margin-bottom: 48px;
+    background-color: transparent;
+    background-image: none;
+    height: auto;
+    width: 420px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .wrapper-title-text {
+    margin-bottom: 53px;
+  }
+}

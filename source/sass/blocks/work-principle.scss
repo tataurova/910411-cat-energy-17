@@ -6,7 +6,7 @@
 }
 
 .work-principle__header {
-  font-family: "Oswald", sans-serif;
+  font-family: $font-family--header;
   font-weight: 400;
   font-size: 36px;
   line-height: 60px;
@@ -17,7 +17,8 @@
 
 .work-principle__list {
   list-style: none;
-  font-family: "Arial", "Helvetica", sans-serif;
+  padding: 0;
+  font-family: $font-family--text;
   font-size: 14px;
   color: #444444;
   line-height: 18px;
@@ -26,4 +27,49 @@
 
 .work-principle__item {
   margin-bottom: 32px;
+}
+
+@media (min-width: $tablet-width) {
+  .work-principle {
+    min-height: 680px;
+  }
+
+  .work-principle__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 608px;
+  }
+
+  .work-principle__item {
+    width: 201px;
+    height: 63px;
+  }
+}
+
+@media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  .work-principle__item:nth-child(odd) {
+    margin-right: 180px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .work-principle {
+    min-height: 650px;
+  }
+
+  .work-principle__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 1220px;
+  }
+
+  .work-principle__item {
+    margin-right: 100px;
+  }
+
+  .work-principle__item:nth-child(4n) {
+    margin-right: 0;
+  }
 }
