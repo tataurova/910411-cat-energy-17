@@ -1,6 +1,4 @@
 .wrapper-title {
-  padding-top: 29px;
-  width: 320px;
   padding-left: 0;
   padding-right: 0;
   margin: 0 auto;
@@ -19,5 +17,6 @@
   .wrapper-title {
     width: 100%;
     flex-direction: row;
+    position: relative;
   }
 }

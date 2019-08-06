@@ -5,9 +5,9 @@
   line-height: 60px;
   color: #111111;
   text-align: left;
-  margin-bottom: 36px;
-  padding-top: 32px;
-  padding-bottom: 35px;
+  margin: 0;
+  padding-top: 14px;
+  padding-bottom: 28px;
   border-top: 1px solid $block-background;
   border-bottom: 1px solid $block-background;
 }
@@ -17,5 +17,13 @@
     font-size: 60px;
     line-height: 60px;
     border: none;
+    margin-top: 15px;
+    margin-bottom: 137px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-catalog__header {
+    margin-top: 1px;
   }
 }

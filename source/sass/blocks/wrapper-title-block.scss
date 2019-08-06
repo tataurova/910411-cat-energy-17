@@ -3,3 +3,16 @@
   flex-direction: column;
   justify-content: center;
 }
+
+
+@media (min-width: $tablet-width) {
+  .wrapper-title-block {
+    margin-left: 117px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .wrapper-title-block {
+    margin-left: 80px;
+  }
+}

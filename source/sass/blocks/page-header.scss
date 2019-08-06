@@ -1,22 +1,36 @@
 .page-header {
   display: flex;
   flex-direction: column;
-  height: 260px;
 }
 
 .page-header__logo {
-  margin: 0 auto;
-  padding-top: 18px;
+  padding-top: 13px;
+  padding-bottom: 10px;
 }
 
 @media (min-width: $tablet-width) {
   .page-header {
     flex-direction: row;
     justify-content: space-between;
-    height: 110px;
   }
 
   .page-header__logo {
     margin: 0;
+    padding-top: 24px;
+  }
+
+  .page-header img {
+    width: 174px;
+    height: auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header__logo {
+    padding-top: 55px;
+  }
+
+  .page-header img {
+    width: 203px;
   }
 }

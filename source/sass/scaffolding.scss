@@ -1,11 +1,13 @@
 body {
-  min-width: 320px;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
 }
 
 .page-header,
-.page-main,
+.wrapper-cat-program,
+.work-principle,
+.live-example,
+.contacts,
 .page-catalog,
 .page-footer {
   margin: 0 auto;
@@ -15,7 +17,10 @@ body {
 
 @media (min-width: $tablet-width) {
   .page-header,
-  .page-main,
+  .wrapper-cat-program,
+  .work-principle,
+  .live-example,
+  .contacts,
   .page-catalog,
   .page-footer {
     padding-left: 30px;
@@ -24,8 +29,15 @@ body {
 }
 
 @media (min-width: $desktop-width) {
+  body {
+    width: 1440px;
+  }
+
   .page-header,
-  .page-main,
+  .wrapper-cat-program,
+  .work-principle,
+  .live-example,
+  .contacts,
   .page-catalog,
   .page-footer {
     padding-left: 110px;

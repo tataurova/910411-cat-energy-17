@@ -1,9 +1,9 @@
 .cat-program {
   background-color: $block-background;
-  padding-top: 39px;
-  padding-left: 21px;
-  padding-right: 36px;
-  padding-bottom: 22px;
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 19px;
 }
 
 .cat-program__header {
@@ -13,7 +13,30 @@
   line-height: 37px;
   color: #111111;
   text-transform: uppercase;
-  margin-bottom: 36px;
+  margin-bottom: 29px;
+  margin-left: 71px;
+  position: relative;
+}
+
+.cat-program__header::before {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  content: "";
+  left: -69px;
+  top: -5px;
+  background: $accent-color;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.cat-program:nth-child(1) .cat-program__header::before {
+  background-image: url("../img/icon-cat-slim.svg");
+}
+
+.cat-program:nth-child(2) .cat-program__header::before {
+  background-image: url("../img/icon-cat-pro.svg");
 }
 
 .cat-program__intro {
@@ -22,7 +45,9 @@
   line-height: 18px;
   color: #444444;
   text-align: left;
-  margin-bottom: 44px;
+  padding-bottom: 22px;
+  border-bottom: 1px solid #666666;
+  margin-bottom: 19px;
 }
 
 .cat-program__catalog-reference {
@@ -32,17 +57,72 @@
   line-height: 16px;
   color: #111111;
   text-transform: uppercase;
+  position: relative;
+}
+
+.cat-program__catalog-reference::after {
+  position: absolute;
+  width: 25px;
+  height: 12px;
+  top: 7px;
+  right: -36px;
+  content: "";
+  background-image: url("../img/icon-right-arrow-long.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 @media (min-width: $tablet-width) {
   .cat-program {
-    width: 708px;
+    padding-top: 47px;
+    padding-left: 53px;
+    padding-bottom: 59px;
+  }
+
+  .cat-program__header {
+    font-size: 36px;
+    line-height: 37px;
+    margin-left: 0;
+    margin-bottom: 24px;
+  }
+
+  .cat-program__intro {
+    font-size: 16px;
+    line-height: 24px;
+    width: 372px;
+    margin-bottom: 33px;
+  }
+
+  .cat-program__intro:nth-child(2) {
+    width: 342px;
+  }
+
+  .cat-program__catalog-reference {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .cat-program__catalog-reference::after {
+    top: 10px;
+    right: -47px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .cat-program {
-    width: 400px;
     margin-bottom: 0;
+    padding-right: 53px;
+  }
+
+  .cat-program__header {
+    margin-left: 161px;
+    margin-bottom: 73px;
+  }
+
+  .cat-program__intro,
+  .cat-program__intro:nth-child(2) {
+    width: 462px;
+    margin-bottom: 8px;
+    border: none;
   }
 }
