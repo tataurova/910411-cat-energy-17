@@ -1,48 +1,7 @@
 body {
   margin: 0 auto;
   padding: 0;
-}
-
-.page-header,
-.wrapper-cat-program,
-.work-principle,
-.live-example,
-.contacts,
-.page-catalog,
-.page-footer {
-  margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-@media (min-width: $tablet-width) {
-  .page-header,
-  .wrapper-cat-program,
-  .work-principle,
-  .live-example,
-  .contacts,
-  .page-catalog,
-  .page-footer {
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  body {
-    width: 1440px;
-  }
-
-  .page-header,
-  .wrapper-cat-program,
-  .work-principle,
-  .live-example,
-  .contacts,
-  .page-catalog,
-  .page-footer {
-    padding-left: 110px;
-    padding-right: 110px;
-  }
+  counter-reset: section;
 }
 
 /* временно для визуализации
