@@ -3,10 +3,10 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
-  color: #ffffff;
   text-align: center;
   margin: 0;
   margin-top: 27px;
+  order: 1;
 }
 
 .page-main__title {
@@ -14,21 +14,23 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 14px;
-  color: #ffffff;
   text-align: center;
   text-transform: uppercase;
   margin: 0;
   margin-top: 25px;
+  margin-bottom: 29px;
+  order: 2;
 }
 
 .page-main__link {
   margin: 0 auto;
   z-index: 100;
+  order: 4;
+  margin-bottom: 22px;
 }
 
-.page-main__title-picture {
-  margin-top: -314px;
-  margin-left: 20px;
+.page-main__title-image {
+  order: 3;
 }
 
 .page-main__slim {
@@ -50,7 +52,8 @@
     font-size: 60px;
     line-height: 60px;
     margin-top: 29px;
-    margin-bottom: 41px;
+    margin-bottom: 16px;
+    width: 414px;
   }
 
   .page-main__title {
@@ -61,8 +64,7 @@
 
   .page-main__title-picture {
     margin-top: -80px;
-    margin-left: 28px;
-    z-index: 0;
+    margin-left: -90px;
     width: 709px;
     height: auto;
   }
@@ -74,6 +76,7 @@
     line-height: 20px;
     padding-top: 15px;
     padding-bottom: 17px;
+    order: 3;
   }
 }
 
@@ -88,12 +91,5 @@
     position: absolute;
     top: 30px;
     left: 422px;
-  }
-}
-
-/* временно для выравнивания футера */
-@media (max-width: $mobile-width-only) {
-  .page-main {
-    margin-bottom: 823px;
   }
 }

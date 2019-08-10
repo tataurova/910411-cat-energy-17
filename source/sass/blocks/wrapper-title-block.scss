@@ -2,13 +2,14 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
-
 
 @media (min-width: $tablet-width) {
   .wrapper-title-block {
-    margin-left: 117px;
-  }
+    align-items: flex-start;
+    margin-left: 87px;
+    }
 }
 
 @media (min-width: $desktop-width) {

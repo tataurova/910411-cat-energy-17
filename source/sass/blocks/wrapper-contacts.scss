@@ -1,0 +1,13 @@
+.wrapper-contacts {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 32px;
+  padding-bottom: 23px;
+}
+
+@media (min-width: $tablet-width) {
+  .wrapper-contacts {
+    padding-left: 71px;
+    padding-right: 71px;
+  }
+}

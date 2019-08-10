@@ -1,0 +1,41 @@
+.contacts__invite {
+  font-family: $font-family--header;
+  font-size: 16px;
+  line-height: 20px;
+  color: #111111;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.contacts__address {
+  font-family: $font-family--text;
+  font-size: 14px;
+  line-height: 20px;
+  color: #444444;
+  font-style: normal;
+}
+
+.contacts__map {
+  width: 100%;
+  margin: 0 auto;
+  background: url("../img/bg-map-mobile@1x.png");
+  background-color: $block-background;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts__invite {
+    width: 156px;
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .contacts__address {
+    font-size: 16px;
+    width: 156px;
+    text-align: right;
+  }
+
+  .contacts__map {
+    background: url("../img/bg-map-tablet@1x.png");
+  }
+}

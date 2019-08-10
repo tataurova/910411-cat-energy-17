@@ -1,8 +1,8 @@
 @import "variables.scss";
 @import "normalize.scss";
 @import "scaffolding.scss";
-@import "container.scss";
 @import "fonts.scss";
+@import "blocks/container.scss";
 @import "blocks/main-nav.scss";
 @import "blocks/index-nav.scss";
 @import "blocks/page-header.scss";
@@ -13,8 +13,12 @@
 @import "blocks/title-index.scss";
 @import "blocks/wrapper-title-text.scss";
 @import "blocks/wrapper-title-block.scss";
+@import "blocks/live-example.scss";
+@import "blocks/contacts.scss";
+@import "blocks/wrapper-contacts.scss";
 @import "blocks/cat-program.scss";
 @import "blocks/work-principle.scss";
+@import "blocks/wrapper-results.scss";
 @import "blocks/page-footer.scss";
 @import "blocks/copyright.scss";
 @import "blocks/social.scss";

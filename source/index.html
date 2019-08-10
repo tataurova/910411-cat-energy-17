@@ -31,19 +31,15 @@
   </nav>
 </header>
 <main class="page-main">
-  <div class="wrapper-title title-index">
-    <div class="wrapper-title-block">
-      <div class="wrapper-title-text">
-        <h1 class="page-main__header">Функциональное питание для котов</h1>
-        <p class="page-main__title">Занялся собой? Займись котом!</p>
-      </div>
+    <div class="wrapper-title-block container">
+      <h1 class="page-main__header">Функциональное питание для котов</h1>
+      <p class="page-main__title">Занялся собой? Займись котом!</p>
       <a class="button page-main__link" href="program-selection.html">Подобрать программу</a>
-    </div>
-    <picture>
-      <source media="(min-width: 1200px)" srcset="img/index-can-desktop@1x.png">
-      <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg">
-      <img class="page-main__title-picture" src="img/index-can-mobile@1x.png" width="280" height="270" alt="Cat Energy Pro Курица">
-    </picture>
+      <picture class="page-main__title-image">
+        <source media="(min-width: 1200px)" srcset="img/index-can-desktop@1x.png">
+        <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg">
+        <img class="page-main__title-picture" src="img/index-can-mobile@1x.png" width="280" height="270" alt="Cat Energy Pro Курица">
+      </picture>
   </div>
   <div class="wrapper-cat-program container">
     <section class="cat-program page-main__slim">
@@ -95,20 +91,39 @@
       Отличный результат без изнуряющих тренировок! При этом он не менял своих превычек и
       по-прежнему спит по 16 часов в день.
     </p>
+    <div class="wrapper-results">
     <ul class="live-example__results">
       <li class="live-example__item">
-        <p class="live-example__result"><span>5 кг</span>Снижение веса</p>
+        <p class="live-example__result">
+          <span class="live-example__value">5 кг</span>
+          <span class="live-example__parameter">Снижение веса</span>
+        </p>
       </li>
       <li class="live-example__item">
-        <p class="live-example__result"><span>60 дней</span>Затрачено времени</p>
+        <p class="live-example__result">
+          <span class="live-example__value">60 дней</span>
+          <span class="live-example__parameter">Затрачено времени</span>
+        </p>
       </li>
     </ul>
-    <b class="live-example__total-expenditure">Затраты на питание: 15000 руб.</b>
+      <p class="live-example__total-expenditure">
+        <span class="live-example__expenditure-item">Затраты на питание:</span>
+        <span class="live-example__expenditure-cost">15000 руб.</span>
+      </p>
+    </div>
+    <picture class="live-example__picture">
+        <source media="(min-width: 1200px)" srcset="img/before-desktop@1x.png">
+        <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png">
+        <img class="live-example__image" src="img/before-mobile@1x.png" width="311" height="232" alt="Кот до снижения веса">
+      </picture>
   </section>
-  <section class="contacts container">
+  <section class="contacts">
     <h2 class="visually-hidden">Как до нас добраться</h2>
-    <p class="contacts__invite">Приглашаем к сотрудничеству дилеров!</p>
-    <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+    <div class="wrapper-contacts container">
+      <p class="contacts__invite">Приглашаем к сотрудничеству дилеров!</p>
+      <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+    </div>
+    <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2187.0616439548103!2d30.32073023334655!3d59.93868303570117!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1565432123473!5m2!1sru!2sru" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
   </section>
 </main>
 <footer class="page-footer container">
