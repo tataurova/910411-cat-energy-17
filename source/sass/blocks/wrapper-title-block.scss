@@ -9,11 +9,13 @@
   .wrapper-title-block {
     align-items: flex-start;
     margin-left: 87px;
-    }
+  }
 }
 
 @media (min-width: $desktop-width) {
   .wrapper-title-block {
     margin-left: 80px;
+    margin-bottom: 267px;
+    position: relative;
   }
 }

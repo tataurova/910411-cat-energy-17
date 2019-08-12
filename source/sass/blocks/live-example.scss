@@ -113,7 +113,6 @@
   .live-example__parameter {
     font-size: 14px;
     line-height: 14px;
-    width: 126px;
     padding-left: 8px;
     padding-right: 8px;
     max-width: 142px;
@@ -122,10 +121,10 @@
   }
 
   .live-example__total-expenditure {
-     font-size: 20px;
-     display: flex;
-     flex-direction: column;
-     align-items: flex-end;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
   }
 
   .live-example__expenditure-item {
@@ -136,5 +135,21 @@
     width: 690px;
     height: 512px;
   }
+}
 
+@media (min-width: $desktop-width) {
+  .live-example__description {
+    width: 430px;
+  }
+
+  .live-example__total-expenditure {
+    align-self: flex-start;
+    flex-direction: row;
+    width: 366px;
+  }
+
+  .live-example__expenditure-item {
+    margin-bottom: 0;
+    margin-right: 64px;
+  }
 }

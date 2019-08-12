@@ -39,3 +39,13 @@
     background: url("../img/bg-map-tablet@1x.png");
   }
 }
+
+@media (min-width: $desktop-width) {
+  .contacts {
+    position: relative;
+  }
+
+  .contacts__map {
+    background: url("../img/bg-map-desktop@1x.png");
+  }
+}

@@ -33,4 +33,21 @@
   .page-header img {
     width: 203px;
   }
+
+  .page-header {
+    position: relative;
+  }
+
+  .index-nav.page-header::after {
+    position: absolute;
+    width: 720px;
+    height: 696px;
+    content: "";
+    background-color: $accent-color;
+    background-image: url("../img/index-background-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    top: 0;
+    right: 0;
+    z-index: -1;
+  }
 }

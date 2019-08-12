@@ -11,3 +11,18 @@
     padding-right: 71px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .wrapper-contacts {
+    width: 570px;
+    position: absolute;
+    background: #ffffff;
+    padding-left: 76px;
+    padding-right: 90px;
+    padding-top: 66px;
+    padding-bottom: 60px;
+    top: 95px;
+    left: 110px;
+    box-sizing: border-box;
+  }
+}
