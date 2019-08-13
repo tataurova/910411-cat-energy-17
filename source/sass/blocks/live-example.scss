@@ -84,10 +84,6 @@
 }
 
 @media (min-width: $tablet-width) {
-  .live-example {
-    margin-top: -153px; /* временно */
-  }
-
   .live-example__header {
     font-size: 60px;
     margin-bottom: 64px;
@@ -138,8 +134,23 @@
 }
 
 @media (min-width: $desktop-width) {
+  .live-example {
+    position: relative;
+    padding-top: 71px;
+  }
+
+  .live-example__header {
+    position: absolute;
+    top: -135px;
+  }
+
   .live-example__description {
-    width: 430px;
+    width: 435px;
+    margin-bottom: 53px;
+  }
+
+  .live-example__results {
+    margin-bottom: 26px;
   }
 
   .live-example__total-expenditure {
@@ -150,6 +161,6 @@
 
   .live-example__expenditure-item {
     margin-bottom: 0;
-    margin-right: 64px;
+    margin-right: 66px;
   }
 }
