@@ -1,36 +1,7 @@
 body {
-  min-width: 320px;
-  margin: 0;
-  padding: 0;
-}
-
-.page-header,
-.page-main,
-.page-catalog,
-.page-footer {
   margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-@media (min-width: $tablet-width) {
-  .page-header,
-  .page-main,
-  .page-catalog,
-  .page-footer {
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .page-header,
-  .page-main,
-  .page-catalog,
-  .page-footer {
-    padding-left: 110px;
-    padding-right: 110px;
-  }
+  padding: 0;
+  counter-reset: section;
 }
 
 /* временно для визуализации

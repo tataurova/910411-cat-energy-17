@@ -1,5 +1,5 @@
 .title-index {
-  margin-bottom: 22px;
+  margin-bottom: 66px;
 }
 
 @media (min-width: $tablet-width) {
@@ -10,6 +10,8 @@
 
 @media (min-width: $desktop-width) {
   .title-index {
-    margin-bottom: 268px;
+    margin-bottom: 267px;
+    margin-top: -503px;
+    margin-left: 110px;
   }
 }

@@ -1,0 +1,28 @@
+.wrapper-contacts {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 32px;
+  padding-bottom: 23px;
+}
+
+@media (min-width: $tablet-width) {
+  .wrapper-contacts {
+    padding-left: 71px;
+    padding-right: 71px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .wrapper-contacts {
+    width: 570px;
+    position: absolute;
+    background: #ffffff;
+    padding-left: 76px;
+    padding-right: 90px;
+    padding-top: 66px;
+    padding-bottom: 60px;
+    top: 95px;
+    left: 110px;
+    box-sizing: border-box;
+  }
+}
