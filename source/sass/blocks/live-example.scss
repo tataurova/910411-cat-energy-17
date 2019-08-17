@@ -1,6 +1,7 @@
 .live-example {
   background: $block-background;
   padding-top: 17px;
+  padding-bottom: 34px;
   display: flex;
   flex-direction: column;
 }
@@ -83,7 +84,62 @@
   align-self: center;
 }
 
+.live-example__picture-- {
+  &show {
+    display: block;
+  }
+
+  &none {
+    display: none;
+  }
+}
+
+.live-example__buttons {
+  width: 197px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.live-example__label-before,
+.live-example__label-after {
+  font-family: $font-family--header;
+  font-size: 16px;
+  line-height: 20px;
+  color: #111111;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.live-example__label-before::after {
+  position: absolute;
+  content: "";
+  width: 35px;
+  height: 6px;
+  top: 6px;
+  left: 61px;
+  background: $accent-color;
+  border-radius: 3px;
+  z-index: 2;
+}
+
+.live-example__label-after::before {
+  position: absolute;
+  content: "";
+  width: 82px;
+  height: 12px;
+  top: 2px;
+  right: 56px;
+  background: #ffffff;
+  border-radius: 6px;
+  border: 1px solid #cdcdcd;
+}
+
 @media (min-width: $tablet-width) {
+  .live-example {
+    padding-bottom: 75px;
+  }
+
   .live-example__header {
     font-size: 60px;
     margin-bottom: 64px;
@@ -130,6 +186,46 @@
   .live-example__image {
     width: 690px;
     height: 512px;
+  }
+
+  .live-example__buttons {
+    width: 569px;
+  }
+
+  .live-example__label-before,
+  .live-example__label-after {
+    font-size: 20px;
+  }
+
+  .live-example__label-before::before {
+    position: absolute;
+    content: "";
+    width: 8px;
+    height: 8px;
+    background-color: $accent-color;
+    border-radius: 50%;
+    z-index: 3;
+    top: 8px;
+    left: 304px;
+  }
+
+  .live-example__label-before::after {
+    width: 34px;
+    height: 34px;
+    border: 1px solid #cdcdcd;
+    border-radius: 50%;
+    background-color: #ffffff;
+    top: -6px;
+    left: 290px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  }
+
+  .live-example__label-after::before {
+    width: 428px;
+    height: 6px;
+    top: 9px;
+    border-radius: 2px;
+    background-color: #dcdcdc;
   }
 }
 

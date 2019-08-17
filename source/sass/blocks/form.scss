@@ -1,0 +1,20 @@
+.form fieldset {
+  border: none;
+}
+
+.form input {
+  border: 1px solid #cdcdcd;
+  padding-left: 16px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  flex-grow: 1;
+}
+
+.form__cat-info p {
+  display: flex;
+  align-items: center;
+}
+
+.form__cat-info label {
+  margin-right: 16px;
+}

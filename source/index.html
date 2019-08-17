@@ -112,11 +112,22 @@
         <span class="live-example__expenditure-cost">15000 руб.</span>
       </p>
     </div>
-    <picture class="live-example__picture">
+    <picture class="live-example__picture-before live-example__picture--show">
         <source media="(min-width: 1200px)" srcset="img/before-desktop@1x.png">
         <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png">
         <img class="live-example__image" src="img/before-mobile@1x.png" width="311" height="232" alt="Кот до снижения веса">
       </picture>
+      <picture class="live-example__picture-after live-example__picture--none">
+        <source media="(min-width: 1200px)" srcset="img/after-desktop@1x.png">
+        <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png">
+        <img class="live-example__image" src="img/after-mobile@1x.png" width="320" height="240" alt="Кот до снижения веса">
+      </picture>
+      <div class="live-example__buttons">
+      <input class="live-example__button-before visually-hidden" type="radio" id="button-before-id" name="toggle">
+      <input class="live-example__button-after visually-hidden" type="radio" id="button-after-id" name="toggle">
+      <label class="live-example__label-before" for="button-before-id">Было</label>
+      <label class="live-example__label-after" for="button-after-id">Стало</label>
+      </div>
       </div>
   </section>
     </div>
@@ -191,5 +202,25 @@ z"/>
   </div>
 </footer>
 <script src="js/script.js"></script>
+<script>
+  var before = document.querySelector(".live-example__button-before");
+  var after = document.querySelector(".live-example__button-after");
+  var picture1 = document.querySelector(".live-example__picture-before");
+  var picture2 = document.querySelector(".live-example__picture-after");
+
+  before.onclick = function() {
+    picture1.classList.remove("live-example__picture--none");
+    picture1.classList.add("live-example__picture--show");
+    picture2.classList.remove("live-example__picture--show");
+    picture2.classList.add("live-example__picture--none");
+    }
+
+  after.onclick = function() {
+    picture1.classList.remove("live-example__picture--show");
+    picture1.classList.add("live-example__picture--none");
+    picture2.classList.remove("live-example__picture--none");
+    picture2.classList.add("live-example__picture--show");
+    }
+</script>
 </body>
 </html>
