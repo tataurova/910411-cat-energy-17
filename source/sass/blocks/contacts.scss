@@ -1,3 +1,7 @@
+.contacts {
+  background-color: $block-background;
+}
+
 .contacts__invite {
   width: 123px;
   font-family: $font-family--header;
@@ -25,11 +29,11 @@
 }
 
 .contacts__street {
-    margin: 0;
+  margin: 0;
 }
 
 .contacts__city {
-    margin: 0;
+  margin: 0;
 }
 
 @media (min-width: $tablet-width) {

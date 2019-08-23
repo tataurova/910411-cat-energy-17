@@ -12,6 +12,15 @@
 .site-list a {
   text-decoration: none;
   color: #111111;
+
+  &:hover,
+  &:focus {
+    color: rgba(17, 17, 17, 0.6);
+  }
+
+  &:active {
+    color: rgba(17, 17, 17, 0.3);
+  }
 }
 
 .site-list__item {
@@ -37,6 +46,7 @@
 
   .site-list__item--active {
     border-bottom: 2px solid $accent-color;
+    padding-top: 9px;
   }
 }
 

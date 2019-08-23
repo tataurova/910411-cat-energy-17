@@ -16,9 +16,34 @@
 .form input {
   border: 1px solid #cdcdcd;
   padding-left: 14px;
+  padding-right: 14px;
   padding-top: 12px;
   padding-bottom: 12px;
   flex-grow: 1;
+  box-sizing: border-box;
+
+  &:hover,
+  &:focus {
+    border-color: #bababa;
+    outline: none;
+  }
+
+  &:active,
+  &:invalid {
+    outline: none;
+    padding-left: 13px;
+    padding-right: 13px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+  }
+
+  &:active {
+    border: 2px solid #444444;
+  }
+
+  &:invalid {
+    border: 2px solid #ff8282;
+  }
 }
 
 .form input::placeholder {
@@ -100,7 +125,7 @@
   width: 136px;
 }
 
-.form__program-radio+label::before {
+.form__program-radio + label::before {
   position: absolute;
   content: "";
   width: 28px;
@@ -111,7 +136,7 @@
   top: -6px;
 }
 
-.form__program-radio:checked+label::after {
+.form__program-radio:checked + label::after {
   position: absolute;
   content: "";
   width: 12px;
@@ -176,7 +201,7 @@
   position: relative;
 }
 
-.form__additionally-checkbox+label::before {
+.form__additionally-checkbox + label::before {
   position: absolute;
   content: "";
   width: 28px;
@@ -186,7 +211,19 @@
   top: -2px;
 }
 
-.form__additionally-checkbox:checked+label::after {
+.form__additionally-checkbox + label:hover::before,
+.form__additionally-checkbox:checked + label:hover::before,
+.form__additionally-checkbox:focus + label::before,
+.form__additionally-checkbox:checked:focus + label::before {
+  border-color: #bababa;
+}
+
+.form__additionally-checkbox + label:active::before,
+.form__additionally-checkbox + label:active {
+  opacity: 0.3;
+}
+
+.form__additionally-checkbox:checked + label::after {
   position: absolute;
   content: "";
   width: 22px;
@@ -226,8 +263,17 @@
 
   .form input {
     padding-left: 18px;
+    padding-right: 18px;
     padding-top: 13px;
     padding-bottom: 13px;
+
+    &:active,
+    &:invalid {
+      padding-left: 17px;
+      padding-right: 17px;
+      padding-top: 12px;
+      padding-bottom: 12px;
+    }
   }
 
   .form__cat-info label,
@@ -240,14 +286,14 @@
     margin-bottom: 21px;
   }
 
-  .form__program-radio+label::before {
+  .form__program-radio + label::before {
     width: 38px;
     height: 38px;
     left: -60px;
     top: -9px;
   }
 
-  .form__program-radio:checked+label::after {
+  .form__program-radio:checked + label::after {
     width: 18px;
     height: 18px;
     left: -49px;
@@ -393,7 +439,7 @@
   }
 
   .form__comment textarea {
-    width: 1220px
+    width: 1220px;
   }
 
   .form__additionally-item:nth-child(2n-1) {

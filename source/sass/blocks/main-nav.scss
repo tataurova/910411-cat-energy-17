@@ -39,14 +39,11 @@
   &::before,
   &::after {
     content: "";
-
     position: absolute;
     top: 24px;
     left: 18px;
-
     width: 23px;
     height: 2px;
-
     background-color: #111111;
   }
 
@@ -88,8 +85,25 @@
     width: 480px;
   }
 
-  .index-nav .main-nav__list {
+  .main-nav--index .main-nav__list {
     margin-left: 133px;
+  }
+
+  .main-nav--index .site-list a {
+    color: #ffffff;
+
+    &:hover,
+    &:focus {
+      color: rgba(255, 255, 255, 0.6);
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+    }
+  }
+
+  .main-nav--index .site-list__item--active {
+    border-color: #ffffff;
   }
 }
 
