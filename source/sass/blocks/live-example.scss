@@ -2,8 +2,12 @@
   background: $block-background;
   padding-top: 17px;
   padding-bottom: 34px;
+}
+
+.live-example__row {
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .live-example__header {
@@ -77,6 +81,7 @@
   line-height: 20px;
   text-transform: uppercase;
   align-self: center;
+  text-align: center;
 }
 
 .live-example__image {
@@ -87,11 +92,27 @@
 .live-example__picture-- {
   &show {
     display: block;
+    position: absolute;
+    top: -12px;
+    left: -15px;
   }
 
   &none {
     display: none;
+    position: absolute;
+    top: -12px;
+    left: -15px;
   }
+}
+
+.live-example__pictures {
+  position: relative;
+  width: 100%;
+  min-height: 317px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .live-example__buttons {
@@ -137,7 +158,8 @@
 
 @media (min-width: $tablet-width) {
   .live-example {
-    padding-bottom: 75px;
+    padding-bottom: 0;
+    background: none;
   }
 
   .live-example__header {
@@ -170,6 +192,7 @@
     max-width: 142px;
     width: auto;
     top: 62px;
+    background: #ffffff;
   }
 
   .live-example__total-expenditure {
@@ -190,6 +213,7 @@
 
   .live-example__buttons {
     width: 569px;
+    padding-bottom: 75px;
   }
 
   .live-example__label-before,
@@ -227,17 +251,44 @@
     border-radius: 2px;
     background-color: #dcdcdc;
   }
+
+  .live-example__pictures {
+    position: relative;
+    min-height: 462px;
+    background: #f2f2f2;
+    margin-top: 225px;
+  }
+
+  .live-example__picture--show {
+    top: -200px;
+    left: 15px;
+  }
+
+  .live-example__picture-before {
+    position: absolute;
+    clip: rect(auto 339px auto auto);
+  }
+
+  .live-example__picture-after {
+    position: absolute;
+    clip: rect(auto auto auto 339px);
+  }
 }
 
 @media (min-width: $desktop-width) {
   .live-example {
     position: relative;
     padding-top: 71px;
+    background: #f2f2f2;
+  }
+
+  .live-example__row {
+    flex-direction: row;
   }
 
   .live-example__header {
     position: absolute;
-    top: -135px;
+    top: -185px;
   }
 
   .live-example__description {
@@ -258,5 +309,14 @@
   .live-example__expenditure-item {
     margin-bottom: 0;
     margin-right: 66px;
+  }
+
+  .live-example__pictures {
+    width: 790px;
+    margin-top: 0;
+  }
+
+  .live-example__parameter {
+    background: #f2f2f2;
   }
 }

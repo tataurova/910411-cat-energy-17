@@ -1,4 +1,4 @@
-.page-header {
+.page-header__row {
   display: flex;
   flex-direction: column;
 }
@@ -9,7 +9,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .page-header {
+  .page-header__row {
     flex-direction: row;
     justify-content: space-between;
   }
@@ -38,12 +38,12 @@
     position: relative;
   }
 
-  .index-nav.page-header::after {
+  .page-header--index::after {
     position: absolute;
-    width: 720px;
+    width: 50vw;
     height: 696px;
     content: "";
-    background-color: $accent-color;
+    background-color: #63a73a;
     background-image: url("../img/index-background-desktop@1x.jpg");
     background-repeat: no-repeat;
     top: 0;

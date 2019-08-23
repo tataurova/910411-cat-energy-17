@@ -7,7 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-<header class="page-header container">
+<header class="page-header">
+  <div class="container">
+    <div class="page-header__row">
   <a class="page-header__logo">
     <picture>
       <source media="(min-width: 1200px)" srcset="img/logo-desktop.svg">
@@ -29,6 +31,8 @@
       </li>
     </ul>
   </nav>
+      </div>
+    </div>
 </header>
 <main class="page-form">
   <div class="container">
@@ -40,6 +44,7 @@
     <section class="form-section">
     <h2 class="visually-hidden">Анкета</h2>
       <form class="form" method="get" action="https://echo.htmlacademy.ru">
+            <div class="wrapper-program-selection">
       <fieldset class="form__cat-info">
         <legend class="visually-hidden">Данные кота</legend>
         <p class="form__name">
@@ -72,8 +77,10 @@
             </li>
           </ul>
       </fieldset>
+            </div>
       <fieldset class="form__owner-info">
         <legend class="form__owner-header">Контактные данные (владельца кота)</legend>
+        <div class="wrapper-form-owner">
         <p class="form__owner-email">
           <label class="form__value-email" for="form__email-field">E-mail:*</label>
           <input id="form__email-field" type="email" name="email" value="" placeholder="kuklachev@gmail.com">
@@ -93,6 +100,7 @@
   C7.8,20,8.1,19.7,8.1,19.4z"/>
 </svg>
         </p>
+          </div>
       </fieldset>
       <fieldset class="form__comment">
         <legend class="form__comment-header">Комментарий</legend>
@@ -106,19 +114,19 @@
       <ul class="form__additionally-list">
         <li class="form__additionally-item">
           <input class="visually-hidden form__additionally-checkbox" type="checkbox" name="sugar-substitute" id="form__sugar-substitute" checked>
-          <lebel for="form__sugar-substitute">Сахарозаменитель</lebel>
+          <label for="form__sugar-substitute">Сахарозаменитель</label>
         </li>
           <li class="form__additionally-item">
           <input class="visually-hidden form__additionally-checkbox" type="checkbox" name="drinking-water" id="form__drinking-water">
-          <lebel for="form__drinking-water">Питьевая вода</lebel>
+          <label for="form__drinking-water">Питьевая вода</label>
         </li>
           <li class="form__additionally-item">
           <input class="visually-hidden form__additionally-checkbox" type="checkbox" name="milk" id="form__milk">
-          <lebel for="form__milk">Молоко</lebel>
+          <label for="form__milk">Молоко</label>
         </li>
         <li class="form__additionally-item">
           <input class="visually-hidden form__additionally-checkbox" type="checkbox" name="vitamins" id="form__vitamins">
-          <lebel for="form__vitamins">Витамины</lebel>
+          <label for="form__vitamins">Витамины</label>
         </li>
       </ul>
     </fieldset>
@@ -143,7 +151,9 @@
     <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2187.0616439548103!2d30.32073023334655!3d59.93868303570117!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1565432123473!5m2!1sru!2sru" width="100%" height="363" frameborder="0" style="border:0" allowfullscreen></iframe>
   </section>
 </main>
-<footer class="page-footer container">
+<footer class="page-footer">
+  <div class="container">
+    <div class="page-footer__row">
   <img class="page-footer__logo-image" src="img/logo-footer.svg" width="128" height="24" alt="Cat Energy">
   <div class="page-footer__social social">
     <ul class="social__list">
@@ -203,6 +213,8 @@ z"/>
       <img src="img/htmlacademy.svg" width="27" height="34" alt="Логотип HTML Academy">
     </a>
   </div>
+      </div>
+    </div>
 </footer>
 </body>
 </html>

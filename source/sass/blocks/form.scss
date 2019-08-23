@@ -172,14 +172,18 @@
   margin-bottom: 25px;
 }
 
+.form__additionally-item label {
+  position: relative;
+}
+
 .form__additionally-checkbox+label::before {
   position: absolute;
   content: "";
   width: 28px;
   height: 28px;
   border: 1px solid #cdcdcd;
-  left: -40px;
-  top: -5px;
+  left: -46px;
+  top: -2px;
 }
 
 .form__additionally-checkbox:checked+label::after {
@@ -190,8 +194,8 @@
   background-image: url("../img/icon-tick.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
-  left: -40px;
-  top: -5px;
+  left: -42px;
+  top: 5px;
 }
 
 .page-form__additionally {
@@ -352,5 +356,67 @@
 
   .page-form__additionally {
     font-size: 16px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__cat-info {
+    width: 570px;
+  }
+
+  .form__nutrition-program {
+    width: 570px;
+    box-sizing: border-box;
+  }
+
+  .form__owner-info::before {
+    width: 750px;
+  }
+
+  .form__comment::before {
+    width: 1080px;
+  }
+
+  .form__additionally::before {
+    width: 1050px;
+  }
+
+  .form__owner-info::after,
+  .form__comment::after,
+  .form__additionally::after {
+    width: 50px;
+  }
+
+  .form__cat-info p,
+  .form__owner-info p {
+    width: 570px;
+  }
+
+  .form__comment textarea {
+    width: 1220px
+  }
+
+  .form__additionally-item:nth-child(2n-1) {
+    margin-right: 0;
+  }
+
+  .form__additionally-list {
+    justify-content: space-between;
+  }
+
+  .form__additionally-checkbox + label::before {
+    width: 38px;
+    height: 38px;
+    left: -59px;
+    top: -4px;
+  }
+
+  .form__additionally-checkbox:checked + label::after {
+    left: -49px;
+    top: 8px;
+  }
+
+  .form__button {
+    width: 568px;
   }
 }
