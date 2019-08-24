@@ -58,6 +58,10 @@
   color: #111111;
   text-transform: uppercase;
   position: relative;
+
+  &:active {
+    color: rgba(17, 17, 17, 0.3);
+  }
 }
 
 .cat-program__catalog-reference::after {

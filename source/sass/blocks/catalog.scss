@@ -72,6 +72,15 @@
   color: #444444;
   font-size: 16px;
   line-height: 20px;
+
+  &:hover,
+  &:focus {
+    background-color: #ebebeb;
+  }
+
+  &:active {
+    color: rgba(68, 68, 68, 0.3);
+  }
 }
 
 .catalog__to-more {

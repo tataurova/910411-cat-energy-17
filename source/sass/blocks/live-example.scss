@@ -1,8 +1,13 @@
 .live-example {
   background: $block-background;
   padding-top: 17px;
+  padding-bottom: 34px;
+}
+
+.live-example__row {
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .live-example__header {
@@ -76,6 +81,7 @@
   line-height: 20px;
   text-transform: uppercase;
   align-self: center;
+  text-align: center;
 }
 
 .live-example__image {
@@ -83,7 +89,79 @@
   align-self: center;
 }
 
+.live-example__picture-- {
+  &show {
+    display: block;
+    position: absolute;
+    top: -12px;
+    left: -15px;
+  }
+
+  &none {
+    display: none;
+    position: absolute;
+    top: -12px;
+    left: -15px;
+  }
+}
+
+.live-example__pictures {
+  position: relative;
+  width: 100%;
+  min-height: 317px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.live-example__buttons {
+  width: 197px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.live-example__label-before,
+.live-example__label-after {
+  font-family: $font-family--header;
+  font-size: 16px;
+  line-height: 20px;
+  color: #111111;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.live-example__label-before::after {
+  position: absolute;
+  content: "";
+  width: 35px;
+  height: 6px;
+  top: 6px;
+  left: 61px;
+  background: $accent-color;
+  border-radius: 3px;
+  z-index: 2;
+}
+
+.live-example__label-after::before {
+  position: absolute;
+  content: "";
+  width: 82px;
+  height: 12px;
+  top: 2px;
+  right: 56px;
+  background: #ffffff;
+  border-radius: 6px;
+  border: 1px solid #cdcdcd;
+}
+
 @media (min-width: $tablet-width) {
+  .live-example {
+    padding-bottom: 0;
+    background: none;
+  }
+
   .live-example__header {
     font-size: 60px;
     margin-bottom: 64px;
@@ -114,6 +192,7 @@
     max-width: 142px;
     width: auto;
     top: 62px;
+    background: #ffffff;
   }
 
   .live-example__total-expenditure {
@@ -131,17 +210,108 @@
     width: 690px;
     height: 512px;
   }
+
+  .live-example__buttons {
+    width: 569px;
+    padding-bottom: 75px;
+  }
+
+  .live-example__label-before,
+  .live-example__label-after {
+    font-size: 20px;
+    border-bottom: 1px dotted #cdcdcd;
+    padding-bottom: 6px;
+    padding-top: 6px;
+
+    &:hover,
+    &:focus {
+      border-bottom-style: solid;
+    }
+
+    &:active {
+      border: none;
+    }
+  }
+
+  .live-example__label-before::before {
+    position: absolute;
+    content: "";
+    width: 8px;
+    height: 8px;
+    background-color: $accent-color;
+    border-radius: 50%;
+    z-index: 3;
+    top: 8px;
+    left: 304px;
+  }
+
+  .live-example__label-before::after {
+    width: 34px;
+    height: 34px;
+    border: 1px solid #cdcdcd;
+    border-radius: 50%;
+    background-color: #ffffff;
+    top: -6px;
+    left: 290px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  }
+
+  .live-example__label-before:hover::after {
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.25);
+  }
+
+  .live-example__label-before:active::after {
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.3);
+    width: 30px;
+    height: 30px;
+    border: 2px solid $accent-color;
+  }
+
+  .live-example__label-after::before {
+    width: 428px;
+    height: 6px;
+    top: 9px;
+    border-radius: 2px;
+    background-color: #dcdcdc;
+  }
+
+  .live-example__pictures {
+    position: relative;
+    min-height: 462px;
+    background: #f2f2f2;
+    margin-top: 225px;
+  }
+
+  .live-example__picture--show {
+    top: -200px;
+    left: 15px;
+  }
+
+  .live-example__picture-before {
+    position: absolute;
+    clip: rect(auto 339px auto auto);
+  }
+
+  .live-example__picture-after {
+    position: absolute;
+    clip: rect(auto auto auto 339px);
+  }
 }
 
 @media (min-width: $desktop-width) {
   .live-example {
     position: relative;
     padding-top: 71px;
+    background: #f2f2f2;
+  }
+
+  .live-example__row {
+    flex-direction: row;
   }
 
   .live-example__header {
     position: absolute;
-    top: -135px;
+    top: -185px;
   }
 
   .live-example__description {
@@ -162,5 +332,14 @@
   .live-example__expenditure-item {
     margin-bottom: 0;
     margin-right: 66px;
+  }
+
+  .live-example__pictures {
+    width: 790px;
+    margin-top: 0;
+  }
+
+  .live-example__parameter {
+    background: #f2f2f2;
   }
 }

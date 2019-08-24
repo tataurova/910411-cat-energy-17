@@ -12,4 +12,14 @@
   display: inline-block;
   vertical-align: middle;
   text-align: center;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
