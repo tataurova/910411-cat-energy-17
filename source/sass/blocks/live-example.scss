@@ -141,8 +141,8 @@
   content: "";
   width: 35px;
   height: 6px;
-  top: 6px;
-  left: 61px;
+  top: 8px;
+  left: 76px;
   background: $accent-color;
   border-radius: 3px;
   z-index: 2;
@@ -153,8 +153,8 @@
   content: "";
   width: 82px;
   height: 12px;
-  top: 2px;
-  right: 72px;
+  top: 4px;
+  right: 60px;
   background: #ffffff;
   border-radius: 6px;
   border: 1px solid #cdcdcd;
@@ -245,8 +245,8 @@
     background-color: $accent-color;
     border-radius: 50%;
     z-index: 3;
-    top: 8px;
-    left: 304px;
+    top: 11px;
+    left: 284px;
   }
 
   .live-example__slider {
@@ -255,8 +255,8 @@
     border: 1px solid #cdcdcd;
     border-radius: 50%;
     background-color: #ffffff;
-    top: -6px;
-    left: 290px;
+    top: -3px;
+    left: 270px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
 
     &:hover {
@@ -274,7 +274,8 @@
   .live-example__button-after::before {
     width: 428px;
     height: 6px;
-    top: 9px;
+    top: 13px;
+    right: 72px;
     border-radius: 2px;
     background-color: #dcdcdc;
   }
