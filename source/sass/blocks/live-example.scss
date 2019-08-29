@@ -362,4 +362,11 @@
   .live-example__picture--show {
     left: -55px;
   }
+
+  .live-example__buttons {
+    position: absolute;
+    content: "";
+    left: 20px;
+    bottom: -7px;
+  }
 }
