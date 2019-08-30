@@ -12,6 +12,14 @@
 
 .page-footer__logo-image {
   margin-bottom: 31px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .page-footer__social {
@@ -26,6 +34,7 @@
   }
 
   .page-footer__row {
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
   }

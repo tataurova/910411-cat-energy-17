@@ -7,7 +7,39 @@
   padding-right: 90px;
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
   margin-top: 24px;
   margin-bottom: 15px;
+}
+
+.social__icon-vkontakte,
+.social__icon-instagram,
+.social__icon-facebook {
+  fill: #666666;
+
+  &:hover,
+  &:active {
+    fill: $accent-color;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .social__icon-vkontakte {
+    width: 30px;
+    height: 16px;
+  }
+
+  .social__icon-instagram {
+    width: 23px;
+    height: 23px;
+  }
+
+  .social__icon-facebook {
+    width: 14px;
+    height: 28px;
+  }
 }

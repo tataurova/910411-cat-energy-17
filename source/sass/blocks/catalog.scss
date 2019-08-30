@@ -169,6 +169,8 @@
     top: 77px;
     right: auto;
     background-image: url("../img/icon-plus.svg");
+    width: 61px;
+    height: 61px;
   }
 
   .catalog__to-more {
@@ -254,7 +256,7 @@
 
   .catalog__item:last-child::before {
     top: 68px;
-    left: 106px;
+    left: 96px;
   }
 
   .catalog__to-all {

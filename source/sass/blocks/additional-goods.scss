@@ -82,6 +82,10 @@
   align-items: center;
 }
 
+.additional-goods__icon-gift {
+  fill: #ffffff;
+}
+
 @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
   .additional-goods__about-present {
     background-image: url("../img/gift-photo-mobile@2x.jpg");
