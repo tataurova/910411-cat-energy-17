@@ -2,6 +2,11 @@
   background-color: $block-background;
 }
 
+.contacts--index {
+  background: none;
+  position: relative;
+}
+
 .contacts__invite {
   width: 123px;
   font-family: $font-family--header;

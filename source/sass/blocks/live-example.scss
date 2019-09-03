@@ -224,6 +224,7 @@
     width: 584px;
     padding-bottom: 71px;
     margin-left: 0;
+    z-index: 10;
   }
 
   .live-example__button-before,
@@ -290,10 +291,24 @@
     background: #f2f2f2;
   }
 
+  .live-example__picture {
+    z-index: 10;
+  }
+
   .live-example__pictures-row {
     position: relative;
     min-height: 462px;
     margin-top: 225px;
+  }
+
+  .live-example__pictures-row::after {
+    position: absolute;
+    content: "";
+    background: #eaeaea;
+    width: 50vw;
+    height: 462px;
+    top: 0;
+    left: 50%;
   }
 
   .live-example__picture-before,
@@ -370,6 +385,10 @@
   .live-example__pictures-row {
     width: 790px;
     margin-top: 0;
+  }
+
+  .live-example__pictures-row::after {
+    left: 39.9%;
   }
 
   .live-example__picture-before,
