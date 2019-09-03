@@ -13,7 +13,11 @@
   position: relative;
 }
 
-.form input {
+.form__name-input,
+.form__weight-input,
+.form__age-input,
+.form__email-input,
+.form__phone-input {
   border: 1px solid #cdcdcd;
   padding-left: 14px;
   padding-right: 14px;
@@ -49,7 +53,12 @@
   }
 }
 
-.form input::placeholder {
+
+.form__name-input::placeholder,
+.form__weight-input::placeholder,
+.form__age-input::placeholder,
+.form__email-input::placeholder,
+.form__phone-input::placeholder {
   color: #444444;
 }
 
@@ -65,9 +74,15 @@
   padding-bottom: 8px;
 }
 
-.form__cat-info label,
-.form__owner-info label {
-  margin-right: 12px;
+.form__value-name,
+.form__value-weight,
+.form__value-age {
+  margin-right: 15px;
+}
+
+.form__value-email,
+.form__value-phone {
+  margin-right: 10px;
 }
 
 .form__owner-header,
@@ -182,13 +197,13 @@
 .form__icon-mail {
   width: 18px;
   height: 14px;
-  right: 19px;
+  right: 16px;
 }
 
 .form__icon-phone {
   width: 21px;
   height: 21px;
-  right: 16px;
+  right: 12px;
 }
 
 .form__comment {
@@ -281,16 +296,12 @@
   padding-bottom: 9px;
 }
 
-.form-section {
-  padding-bottom: 18px;
-}
-
 @media (min-width: $tablet-width) {
-  .form-section {
-    padding-bottom: 65px;
-  }
-
-  .form input {
+  .form__name-input,
+  .form__weight-input,
+  .form__age-input,
+  .form__email-input,
+  .form__phone-input {
     padding-left: 18px;
     padding-right: 18px;
     padding-top: 13px;
@@ -305,14 +316,43 @@
     }
   }
 
-  .form__cat-info label,
-  .form__owner-info label {
+  .form__value-age {
     margin-right: 15px;
+  }
+
+  .form__value-name {
+    margin-right: 16px;
+  }
+
+  .form__value-weight {
+    margin-right: 19px;
+  }
+
+  .form__value-email {
+    margin-right: 18px;
+  }
+
+  .form__value-phone {
+    margin-right: 13px;
+  }
+
+  .form__email-input {
+    padding-left: 20px;
   }
 
   .form__cat-info p,
   .form__owner-info p {
     margin-bottom: 21px;
+  }
+
+  .form__icon-mail {
+    right: 18px;
+    top: 20px;
+  }
+
+  .form__icon-phone {
+    right: 15px;
+    top: 17px;
   }
 
   .form__program-radio + label::before {
@@ -332,6 +372,7 @@
   .form__nutrition-program {
     padding-top: 33px;
     border: 1px solid #cdcdcd;
+    margin: 0;
     margin-bottom: 76px;
   }
 
@@ -390,6 +431,18 @@
     width: 445px;
   }
 
+  .form__additionally-checkbox + label::before {
+    width: 38px;
+    height: 38px;
+    left: -59px;
+    top: -4px;
+  }
+
+  .form__additionally-checkbox:checked + label::after {
+    left: -49px;
+    top: 7px;
+  }
+
   .form__owner-info::before,
   .form__comment::before,
   .form__additionally::before {
@@ -437,29 +490,72 @@
 @media (min-width: $desktop-width) {
   .form__cat-info {
     width: 570px;
+    margin-left: 2px;
+    padding-bottom: 0;
+  }
+
+  .form__program-list {
+    margin-left: 73px;
   }
 
   .form__nutrition-program {
     width: 570px;
     box-sizing: border-box;
+    margin-bottom: 70px;
+  }
+
+  .form__phone-input {
+    padding-left: 21px;
+  }
+
+  .form__icon-mail {
+    right: 21px;
+    top: 18px;
+  }
+
+  .form__additionally-header,
+  .form__comment-header,
+  .form__owner-header {
+    margin-bottom: 77px;
   }
 
   .form__owner-info::before {
-    width: 750px;
+    width: 779px;
+  }
+
+  .form__additionally::before,
+  .form__comment::before,
+  .form__owner-info::before {
+    right: -113px;
+    top: 21px;
+  }
+
+  .form__comment {
+    margin-bottom: 70px;
   }
 
   .form__comment::before {
-    width: 1080px;
+    width: 1112px;
+  }
+
+  .form__additionally-item {
+    width: 186px;
   }
 
   .form__additionally::before {
-    width: 1050px;
+    width: 1079px;
+  }
+
+  .form__additionally-header {
+    margin-bottom: 60px;
   }
 
   .form__owner-info::after,
   .form__comment::after,
   .form__additionally::after {
-    width: 50px;
+    width: 70px;
+    top: 21px;
+    left: -109px;
   }
 
   .form__cat-info p,
@@ -469,6 +565,7 @@
 
   .form__comment textarea {
     width: 1220px;
+    padding-left: 19px;
   }
 
   .form__additionally-item:nth-child(2n-1) {
@@ -477,6 +574,7 @@
 
   .form__additionally-list {
     justify-content: space-between;
+    margin-left: 59px;
   }
 
   .form__additionally-checkbox + label::before {
@@ -492,6 +590,10 @@
   }
 
   .form__button {
-    width: 568px;
+    width: 570px;
+    padding-left: 13px;
+    margin-right: 82px;
+    margin-bottom: 17px;
+    margin-top: 20px;
   }
 }

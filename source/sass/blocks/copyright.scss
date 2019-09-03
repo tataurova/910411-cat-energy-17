@@ -24,10 +24,12 @@
 
 .copyright__icon-htmlacademy {
   fill: #666666;
+  padding-top: 8px;
 }
 
 @media (min-width: $tablet-width) {
   .copyright {
-    width: 162px;
+    width: 164px;
+    flex-shrink: 0;
   }
 }

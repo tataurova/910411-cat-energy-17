@@ -73,6 +73,17 @@
 @media (min-width: $tablet-width) {
   .work-principle {
     padding-top: 45px;
+    padding-bottom: 27px;
+    position: relative;
+  }
+
+  .work-principle::after {
+    content: "";
+    position: absolute;
+    left: -30px;
+    width: 100vw;
+    height: 1px;
+    background-color: #dadada;
   }
 
   .work-principle__header {
@@ -90,7 +101,7 @@
 
   .work-principle__item::after {
     position: absolute;
-    left: 118px;
+    left: 115px;
     top: -23px;
     color: $block-background;
     font-size: 281px;
@@ -113,6 +124,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     margin-left: 0;
+    margin-bottom: 16px;
   }
 
   .work-principle__item {
@@ -121,6 +133,11 @@
     font-size: 16px;
     line-height: 24px;
     margin-bottom: 254px;
+  }
+
+  .work-principle__item:nth-child(3),
+  .work-principle__item:nth-child(4) {
+    margin-bottom: 95px;
   }
 }
 
@@ -132,7 +149,8 @@
 
 @media (min-width: $desktop-width) {
   .work-principle {
-    padding-top: 74px;
+    padding-top: 75px;
+    padding-bottom: 16px;
   }
 
   .work-principle__list {
@@ -157,5 +175,13 @@
 
   .work-principle__item:nth-child(4n) {
     margin-right: 0;
+  }
+
+  .work-principle__header {
+    margin-bottom: 182px;
+  }
+
+  .work-principle::after {
+    display: none;
   }
 }

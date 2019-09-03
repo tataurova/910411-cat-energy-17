@@ -56,7 +56,7 @@
   color: #444444;
   text-align: left;
   padding-bottom: 22px;
-  border-bottom: 1px solid #666666;
+  border-bottom: 1px solid #dadada;
   margin-bottom: 19px;
 }
 
@@ -75,7 +75,9 @@
 }
 
 .cat-program__reference-icon {
-  margin-left: 24px;
+  position: absolute;
+  right: -36px;
+  bottom: 6px;
 }
 
 .cat-program__catalog-reference:hover .cat-program__reference-icon {
@@ -89,8 +91,8 @@
 
 @media (min-width: $tablet-width) {
   .cat-program {
-    padding-top: 47px;
-    padding-left: 53px;
+    padding-top: 44px;
+    padding-left: 52px;
     padding-bottom: 59px;
   }
 
@@ -98,29 +100,34 @@
     font-size: 36px;
     line-height: 37px;
     margin-left: 0;
-    margin-bottom: 24px;
+    margin-bottom: 25px;
   }
 
   .cat-program__header::before {
     width: 200px;
     height: 200px;
-    right: 40px;
-    top: 10px;
+    right: 42px;
+    top: 16px;
     left: auto;
   }
 
   .cat-program__icon-cat-slim {
     width: 141px;
     height: 194px;
-    top: 80px;
+    top: 77px;
     right: 92px;
     left: auto;
+  }
+
+  .cat-program__reference-icon {
+    right: -49px;
+    bottom: 8px;
   }
 
   .cat-program__icon-cat-pro {
     width: 268px;
     height: 113px;
-    top: 135px;
+    top: 132px;
     right: 28px;
     left: auto;
   }
@@ -128,12 +135,13 @@
   .cat-program__intro {
     font-size: 16px;
     line-height: 24px;
-    width: 372px;
-    margin-bottom: 33px;
+    width: 373px;
+    margin-bottom: 34px;
+    border-bottom: none;
   }
 
-  .cat-program__intro:nth-child(2) {
-    width: 342px;
+  .cat-program:nth-child(2) .cat-program__intro {
+    width: 344px;
   }
 
   .cat-program__catalog-reference {
@@ -151,6 +159,8 @@
   .cat-program {
     margin-bottom: 0;
     padding-right: 53px;
+    padding-top: 48px;
+    padding-bottom: 59px;
   }
 
   .cat-program__header {
@@ -164,6 +174,10 @@
     top: -30px;
     left: -160px;
     right: auto;
+  }
+
+  .cat-program__reference-icon {
+    bottom: 10px;
   }
 
   .cat-program__icon-cat-slim {
@@ -183,9 +197,9 @@
   }
 
   .cat-program__intro,
-  .cat-program__intro:nth-child(2) {
-    width: 462px;
-    margin-bottom: 8px;
+  .cat-program:nth-child(2) .cat-program__intro {
+    width: 464px;
+    margin-bottom: 10px;
     border: none;
   }
 }

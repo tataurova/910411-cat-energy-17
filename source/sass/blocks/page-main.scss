@@ -45,13 +45,13 @@
   }
 
   .page-main__slim {
-    margin-bottom: 30px;
+    margin-bottom: 31px;
   }
 
   .page-main__header {
     font-size: 60px;
     line-height: 60px;
-    margin-top: 47px;
+    margin-top: 28px;
     margin-bottom: 16px;
     width: 414px;
   }
@@ -63,8 +63,10 @@
   }
 
   .page-main__title-picture {
-    margin-top: -80px;
-    margin-left: -90px;
+    position: absolute;
+    content: "";
+    top: 229px;
+    left: -88px;
     width: 709px;
     height: auto;
   }
@@ -81,6 +83,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .page-main__header {
+    margin-top: 50px;
+  }
+
   .page-main__title {
     margin-bottom: 53px;
   }
@@ -88,8 +94,7 @@
   .page-main__title-picture {
     width: 552px;
     z-index: 100;
-    position: absolute;
-    top: 45px;
+    top: -33px;
     right: 217px;
     left: auto;
   }
