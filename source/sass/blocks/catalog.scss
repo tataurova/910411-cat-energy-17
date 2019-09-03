@@ -245,10 +245,19 @@
 }
 
 @media (min-width: $desktop-width) {
+  .catalog__header {
+    margin-bottom: 20px;
+  }
+
   .catalog__item {
     width: 245px;
     margin-right: 80px;
     margin-bottom: 142px;
+  }
+
+  .catalog__field,
+  .catalog__value {
+    padding-top: 8px;
   }
 
   .catalog__item:nth-child(4n) {
@@ -257,7 +266,7 @@
 
   .catalog__description {
     width: 169px;
-    margin-bottom: 36px;
+    margin-bottom: 34px;
   }
 
   .catalog__button {
@@ -265,8 +274,8 @@
   }
 
   .catalog__item:last-child::before {
-    top: 68px;
-    left: 96px;
+    top: 56px;
+    left: 92px;
   }
 
   .catalog__to-all {
