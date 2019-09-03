@@ -118,14 +118,31 @@
 }
 
 @media (min-width: $tablet-width) {
+  .additional-goods {
+    padding-bottom: 76px;
+  }
   .additional-goods__header {
     font-size: 36px;
     line-height: 36px;
+    margin-left: 37px;
+    margin-bottom: 80px;
+    margin-top: -102px;
+  }
+
+  .additional-goods__header::before {
+    position: absolute;
+    width: 28px;
+    height: 3px;
+    content: "";
+    background-color: $accent-color;
+    top: 22px;
+    left: -67px;
   }
 
   .additional-goods__header::after {
-    width: 370px;
-    top: 20px;
+    width: 328px;
+    top: 22px;
+    right: -30px;
   }
 
   .additional-goods__name {
@@ -134,8 +151,19 @@
   }
 
   .additional-goods__price {
+    width: 224px;
     font-size: 16px;
     line-height: 20px;
+    margin-bottom: 0;
+    padding-bottom: 5px;
+  }
+
+  .additional-goods__field {
+    text-align: right;
+  }
+
+  .additional-goods__value {
+    width: 92px;
   }
 
   .additional-goods__button {
@@ -143,6 +171,11 @@
     font-size: 16px;
     line-height: 20px;
     align-self: center;
+    margin-top: 14px;
+  }
+
+  .additional-goods__list {
+    margin-bottom: 69px;
   }
 
   .additional-goods__item {
@@ -152,6 +185,8 @@
     border-right: 1px solid #cdcdcd;
     padding-left: 38px;
     padding-right: 38px;
+    padding-top: 25px;
+    padding-bottom: 27px;
   }
 
   .additional-goods__about-present {
@@ -161,6 +196,14 @@
     background-repeat: no-repeat;
     background-color: $accent-color;
     flex-direction: row;
+    padding-left: 90px;
+    padding-right: 125px;
+    padding-top: 75px;
+    padding-bottom: 75px;
+  }
+
+  .additional-goods__icon-gift {
+    padding-bottom: 9px;
   }
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -182,11 +225,7 @@
   }
 
   .additional-goods__header::before {
-    position: absolute;
     width: 53px;
-    height: 3px;
-    content: "";
-    background-color: $accent-color;
     top: 20px;
     left: -70px;
   }
