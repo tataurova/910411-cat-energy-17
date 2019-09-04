@@ -82,11 +82,12 @@
 
 .cat-program__catalog-reference:hover .cat-program__reference-icon {
   width: 34px;
-  margin-left: 21px;
+  right: -41px;
 }
 
 .cat-program__catalog-reference:active .cat-program__reference-icon {
   opacity: 0.3;
+  right: -41px;
 }
 
 @media (min-width: $tablet-width) {
@@ -122,6 +123,14 @@
   .cat-program__reference-icon {
     right: -49px;
     bottom: 8px;
+  }
+
+  .cat-program__catalog-reference:hover .cat-program__reference-icon {
+    right: -54px;
+  }
+
+  .cat-program__catalog-reference:active .cat-program__reference-icon {
+    right: -54px;
   }
 
   .cat-program__icon-cat-pro {
