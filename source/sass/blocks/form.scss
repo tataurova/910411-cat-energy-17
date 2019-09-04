@@ -154,7 +154,8 @@
   top: -6px;
 }
 
-.form__program-radio + label:hover::before {
+.form__program-radio + label:hover::before,
+.form__program-radio + label:focus::before {
   border-color: #bababa;
 }
 
@@ -300,7 +301,6 @@
   .form__name-input,
   .form__weight-input,
   .form__age-input,
-  .form__email-input,
   .form__phone-input {
     padding-left: 18px;
     padding-right: 18px;
@@ -338,6 +338,17 @@
 
   .form__email-input {
     padding-left: 20px;
+    padding-right: 18px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+
+    &:active,
+    &:invalid {
+      padding-left: 19px;
+      padding-right: 17px;
+      padding-top: 12px;
+      padding-bottom: 12px;
+    }
   }
 
   .form__cat-info p,
@@ -506,6 +517,11 @@
 
   .form__phone-input {
     padding-left: 21px;
+
+    &:active,
+    &:invalid {
+      padding-left: 20px;
+    }
   }
 
   .form__icon-mail {

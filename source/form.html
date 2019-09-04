@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
   <link href="css/style.min.css" rel="stylesheet">
-  <link rel="preload" href="fonts/oswaldregular.woff2" as="font" crossorigin="anonymus">
-  <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" crossorigin="anonymus">
+  <link rel="preload" href="fonts/oswaldregular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" crossorigin="anonymous">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
@@ -54,11 +54,13 @@
             <legend class="visually-hidden">Данные кота</legend>
             <p class="form__name">
               <label class="form__value-name" for="form__name-field">Имя:*</label>
-              <input class="form__name-input" id="form__name-field" type="text" name="cat-name" value="" placeholder="Барсик">
+              <input class="form__name-input" id="form__name-field" type="text" name="cat-name" value=""
+                     placeholder="Барсик">
             </p>
             <p class="form__weight">
               <label class="form__value-weight" for="form__weight-field">Вес (кг):*</label>
-              <input class="form__weight-input" id="form__weight-field" type="number" name="cat-weight" value="" placeholder="7">
+              <input class="form__weight-input" id="form__weight-field" type="number" name="cat-weight" value=""
+                     placeholder="7">
             </p>
             <p class="form__age">
               <label class="form__value-age" for="form__age-field">Возраст (лет):</label>
@@ -69,15 +71,18 @@
             <legend class="visually-hidden">Выбор программы питания</legend>
             <ul class="form__program-list">
               <li class="form__program-item">
-                <input class="visually-hidden form__program-radio" type="radio" name="program" value="slim" id="form__slim-program" checked="">
+                <input class="visually-hidden form__program-radio" type="radio" name="program" value="slim"
+                       id="form__slim-program" checked="">
                 <label for="form__slim-program">Похудение</label>
               </li>
               <li class="form__program-item">
-                <input class="visually-hidden form__program-radio" type="radio" name="program" value="weight-gain" id="form__gain-program">
+                <input class="visually-hidden form__program-radio" type="radio" name="program" value="weight-gain"
+                       id="form__gain-program">
                 <label for="form__gain-program">Набор массы</label>
               </li>
               <li class="form__program-item">
-                <input class="visually-hidden form__program-radio" type="radio" name="program" value="not-selected" id="form__no-program">
+                <input class="visually-hidden form__program-radio" type="radio" name="program" value="not-selected"
+                       id="form__no-program">
                 <label for="form__no-program">Не знаю (нужен ваш совет)</label>
               </li>
             </ul>
@@ -88,14 +93,16 @@
           <div class="wrapper-form-owner">
             <p class="form__owner-email">
               <label class="form__value-email" for="form__email-field">E-mail:*</label>
-              <input class="form__email-input" id="form__email-field" type="email" name="email" value="" placeholder="kuklachev@gmail.com">
+              <input class="form__email-input" id="form__email-field" type="email" name="email" value=""
+                     placeholder="kuklachev@gmail.com">
               <svg class="form__icon-mail" width="18" height="14">
                 <use xlink:href="#icon-mail"></use>
               </svg>
             </p>
             <p class="form__owner-phone">
               <label class="form__value-phone" for="form__phone-field">Телефон:*</label>
-              <input class="form__phone-input" id="form__phone-field" type="tel" name="tel" value="" placeholder="8 (960) 900-60-90">
+              <input class="form__phone-input" id="form__phone-field" type="tel" name="tel" value=""
+                     placeholder="8 (960) 900-60-90">
               <svg class="form__icon-phone" width="21" height="21">
                 <use xlink:href="#icon-phone"></use>
               </svg>
@@ -106,18 +113,21 @@
           <legend class="form__comment-header">Комментарий</legend>
           <p class="form__comment-info">
             <label class="visually-hidden" for="comment-field">Комментарий</label>
-            <textarea rows="7" name="comment" id="comment-field" placeholder="Расскажите обо всех повадках кота"></textarea>
+            <textarea rows="7" name="comment" id="comment-field"
+                      placeholder="Расскажите обо всех повадках кота"></textarea>
           </p>
         </fieldset>
         <fieldset class="form__additionally">
           <legend class="form__additionally-header">Дополнительно</legend>
           <ul class="form__additionally-list">
             <li class="form__additionally-item">
-              <input class="visually-hidden form__additionally-checkbox" type="checkbox" name="sugar-substitute" id="form__sugar-substitute" checked="">
+              <input class="visually-hidden form__additionally-checkbox" type="checkbox" name="sugar-substitute"
+                     id="form__sugar-substitute" checked="">
               <label for="form__sugar-substitute">Сахарозаменитель</label>
             </li>
             <li class="form__additionally-item">
-              <input class="visually-hidden form__additionally-checkbox" type="checkbox" name="drinking-water" id="form__drinking-water">
+              <input class="visually-hidden form__additionally-checkbox" type="checkbox" name="drinking-water"
+                     id="form__drinking-water">
               <label for="form__drinking-water">Питьевая вода</label>
             </li>
             <li class="form__additionally-item">
@@ -125,7 +135,8 @@
               <label for="form__milk">Молоко</label>
             </li>
             <li class="form__additionally-item">
-              <input class="visually-hidden form__additionally-checkbox" type="checkbox" name="vitamins" id="form__vitamins">
+              <input class="visually-hidden form__additionally-checkbox" type="checkbox" name="vitamins"
+                     id="form__vitamins">
               <label for="form__vitamins">Витамины</label>
             </li>
           </ul>
@@ -142,23 +153,25 @@
   <section class="contacts">
     <h2 class="visually-hidden">Как до нас добраться</h2>
     <div class="container">
-    <div class="wrapper-contacts container">
-      <p class="contacts__invite">Приглашаем к сотрудничеству дилеров!</p>
-      <address class="contacts__address">
-        <p class="contacts__street">ул. Большая Конюшенная, д. 19/8</p>
-        <p class="contacts__city">Санкт-Петербург</p>
-      </address>
-    </div>
+      <div class="wrapper-contacts container">
+        <p class="contacts__invite">Приглашаем к сотрудничеству дилеров!</p>
+        <address class="contacts__address">
+          <p class="contacts__street">ул. Большая Конюшенная, д. 19/8</p>
+          <p class="contacts__city">Санкт-Петербург</p>
+        </address>
       </div>
-    <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2187.0616439548103!2d30.32073023334655!3d59.93868303570117!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1565432123473!5m2!1sru!2sru" height="360" style="border:0" allowfullscreen=""></iframe>
+    </div>
+    <iframe class="contacts__map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2187.0616439548103!2d30.32073023334655!3d59.93868303570117!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1565432123473!5m2!1sru!2sru"
+            height="360" style="border:0" allowfullscreen=""></iframe>
   </section>
 </main>
 <footer class="page-footer">
   <div class="container">
     <div class="page-footer__row">
       <svg class="page-footer__logo-image" width="128" height="24">
-          <use xlink:href="#icon-logo-footer"></use>
-        </svg>
+        <use xlink:href="#icon-logo-footer"></use>
+      </svg>
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">

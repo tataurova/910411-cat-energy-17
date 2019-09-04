@@ -25,6 +25,7 @@
   fill: #666666;
 
   &:hover,
+  &:focus,
   &:active {
     fill: $accent-color;
   }

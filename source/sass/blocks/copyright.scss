@@ -5,7 +5,8 @@
   width: 100%;
   align-items: center;
 
-  &:hover .copyright__icon-htmlacademy {
+  &:hover .copyright__icon-htmlacademy,
+  &:focus .copyright__icon-htmlacademy {
     fill: $accent-color;
   }
 
