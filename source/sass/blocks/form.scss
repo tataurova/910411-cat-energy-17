@@ -13,6 +13,12 @@
   position: relative;
 }
 
+.form__owner-header {
+  background-color: #ffffff;
+  z-index: 10;
+  position: relative;
+}
+
 .form__name-input,
 .form__weight-input,
 .form__age-input,
@@ -53,7 +59,6 @@
   }
 }
 
-
 .form__name-input::placeholder,
 .form__weight-input::placeholder,
 .form__age-input::placeholder,
@@ -92,6 +97,10 @@
   line-height: 24px;
   text-transform: none;
   margin-bottom: 34px;
+  z-index: 10;
+  position: relative;
+  background-color: #ffffff;
+  padding-right: 21px;
 }
 
 .form__program-list,
@@ -127,20 +136,20 @@
   content: "";
   height: 3px;
   background: $accent-color;
-  right: -20px;
   top: 14px;
+  overflow: hidden;
 }
 
 .form__owner-info::before {
-  width: 99px;
+  width: 100vw;
 }
 
 .form__comment::before {
-  width: 158px;
+  width: 100vw;
 }
 
 .form__additionally::before {
-  width: 136px;
+  width: 100vw;
 }
 
 .form__program-radio + label::before {

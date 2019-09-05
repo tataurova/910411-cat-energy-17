@@ -1,6 +1,6 @@
 .additional-goods {
-  padding-bottom: 18px;
-  padding-top: 13px;
+  padding-bottom: 34px;
+  padding-top: 12px;
 }
 
 .additional-goods__header {
@@ -116,7 +116,8 @@
 
 @media (min-width: $tablet-width) {
   .additional-goods {
-    padding-bottom: 76px;
+    padding-bottom: 75px;
+    padding-top: 14px;
   }
 
   .additional-goods__header {
@@ -124,7 +125,7 @@
     line-height: 36px;
     margin-left: 37px;
     margin-bottom: 80px;
-    margin-top: -102px;
+    margin-top: 37px;
   }
 
   .additional-goods__header::before {
@@ -212,15 +213,19 @@
   }
 
   .additional-goods__text {
-    width: 159px;
+    width: 161px;
     text-align: left;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .additional-goods {
+    padding-bottom: 17px;
+  }
+
   .additional-goods__header {
     margin-left: 0;
-    margin-top: -94px;
+    margin-top: 47px;
     margin-bottom: 76px;
   }
 
