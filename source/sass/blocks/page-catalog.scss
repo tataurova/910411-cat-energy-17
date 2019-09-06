@@ -35,6 +35,11 @@
     margin-top: 15px;
     margin-bottom: 152px;
   }
+
+  .page-catalog__header::after,
+  .page-catalog__header::before {
+    display: none;
+  }
 }
 
 @media (min-width: $desktop-width) {

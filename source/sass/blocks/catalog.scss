@@ -167,6 +167,10 @@
     margin-bottom: 140px;
   }
 
+  .catalog__item::after {
+    display: none;
+  }
+
   .catalog__item:nth-child(2n+1) {
     margin-right: 60px;
   }
