@@ -44,14 +44,17 @@
 
 .form__owner-header::after {
   left: 201px;
+  width: 99px;
 }
 
 .form__comment-header::after {
   left: 142px;
+  width: 158px;
 }
 
 .form__additionally-header::after {
   left: 164px;
+  width: 137px;
 }
 
 .form__additionally-header {
@@ -157,9 +160,30 @@
   padding-top: 26px;
   padding-bottom: 1px;
   border: none;
-  border-top: 1px solid #cdcdcd;
-  border-bottom: 1px solid #cdcdcd;
-  margin-bottom: 28px;
+  margin-bottom: 30px;
+}
+
+.form__program-list {
+  position: relative;
+}
+
+.form__program-list::before,
+.form__program-list::after {
+  position: absolute;
+  content: "";
+  width: 100vw;
+  height: 1px;
+  background-color: #cdcdcd;
+}
+
+.form__program-list::before {
+  top: -26px;
+  left: -66px;
+}
+
+.form__program-list::after {
+  left: -66px;
+  top: auto;
 }
 
 .form__program-item {
@@ -323,7 +347,7 @@
 }
 
 .form__button {
-  margin-top: 14px;
+  margin-top: 16px;
   margin-bottom: 7px;
   font-size: 16px;
   line-height: 20px;
@@ -393,26 +417,29 @@
 
   .form__owner-header::after {
     left: 551px;
+    width: 145px;
   }
 
   .form__comment-header::after {
     left: 217px;
+    width: 479px;
   }
 
   .form__additionally-header::after {
     left: 250px;
+    width: 446px;
   }
 
   .form__owner-header::before,
   .form__comment-header::before,
   .form__additionally-header::before {
-    width: 100vw;
+    width: 30px;
     position: absolute;
     content: "";
     height: 3px;
     background: $accent-color;
-    topx: 22px;
-    left: -810px;
+    top: 22px;
+    right: 265px;
     overflow: hidden;
     z-index: -1;
   }
@@ -450,11 +477,16 @@
     padding-top: 33px;
     border: 1px solid #cdcdcd;
     margin: 0;
-    margin-bottom: 76px;
+    margin-bottom: 74px;
   }
 
   .form__program-list {
     margin-left: 69px;
+  }
+
+  .form__program-list::before,
+  .form__program-list::after {
+    display: none;
   }
 
   .form__additionally-list {
@@ -568,6 +600,7 @@
     width: 570px;
     box-sizing: border-box;
     margin-bottom: 70px;
+    padding-bottom: 3px;
   }
 
   .form__phone-input {
@@ -593,15 +626,28 @@
   .form__additionally-header::before,
   .form__comment-header::before,
   .form__owner-header::before {
-    left: -1631px;
+    right: 263px;
+    width: 69px;
   }
 
-  .form__owner-info::before {
-    width: 779px;
+  .form__owner-header::after {
+    width: 778px;
+  }
+
+  .form__comment-header::after {
+    width: 1113px;
+  }
+
+  .form__additionally-header::after {
+    width: 1079px;
+  }
+
+  .form__owner-info {
+    margin-bottom: 47px;
   }
 
   .form__comment {
-    margin-bottom: 70px;
+    margin-bottom: 62px;
   }
 
   .form__additionally-item {
@@ -609,7 +655,7 @@
   }
 
   .form__additionally-header {
-    margin-bottom: 60px;
+    margin-bottom: 67px;
   }
 
   .form__cat-info p,
