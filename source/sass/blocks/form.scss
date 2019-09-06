@@ -13,10 +13,44 @@
   position: relative;
 }
 
-.form__owner-header {
+.form__owner-header,
+.form__comment-header,
+.form__additionally-header {
+  width: 202px;
   background-color: #ffffff;
   z-index: 10;
   position: relative;
+  font-weight: 400;
+  margin: 0;
+}
+
+.form__owner-header::after,
+.form__comment-header::after,
+.form__additionally-header::after {
+  width: 100vw;
+  position: absolute;
+  content: "";
+  height: 3px;
+  background: $accent-color;
+  top: 14px;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.form__owner-header::after {
+  left: 201px;
+}
+
+.form__comment-header::after {
+  left: 142px;
+}
+
+.form__additionally-header::after {
+  left: 164px;
+}
+
+.form__additionally-header {
+  margin-bottom: 40px;
 }
 
 .form__name-input,
@@ -57,6 +91,22 @@
   &:invalid {
     border: 2px solid #ff8282;
   }
+}
+
+.form__name-input:active + svg,
+.form__weight-input:active + svg,
+.form__age-input:active + svg,
+.form__email-input:active + svg,
+.form__phone-input:active + svg {
+  fill: $accent-color;
+}
+
+.form__name-input:invalid + svg,
+.form__weight-input:invalid + svg,
+.form__age-input:invalid + svg,
+.form__email-input:invalid + svg,
+.form__phone-input:invalid + svg {
+  fill: #ff8282;
 }
 
 .form__name-input::placeholder,
@@ -129,29 +179,6 @@
   margin-bottom: 14px;
 }
 
-.form__owner-info::before,
-.form__comment::before,
-.form__additionally::before {
-  position: absolute;
-  content: "";
-  height: 3px;
-  background: $accent-color;
-  top: 14px;
-  overflow: hidden;
-}
-
-.form__owner-info::before {
-  width: 100vw;
-}
-
-.form__comment::before {
-  width: 100vw;
-}
-
-.form__additionally::before {
-  width: 100vw;
-}
-
 .form__program-radio + label::before {
   position: absolute;
   content: "";
@@ -194,16 +221,6 @@
   fill: #222222;
 }
 
-.form__email-input:invalid ~ .form__icon-mail,
-.form__phone-input:invalid ~ .form__icon-phone {
-  fill: #ff8282;
-}
-
-.form__owner-email:active .form__icon-mail,
-.form__owner-phone:active .form__icon-phone {
-  fill: $accent-color;
-}
-
 .form__icon-mail {
   width: 18px;
   height: 14px;
@@ -217,7 +234,7 @@
 }
 
 .form__comment {
-  margin-bottom: 26px;
+  margin-bottom: 20px;
 }
 
 .form__comment-info {
@@ -232,7 +249,23 @@
   padding-top: 13px;
   padding-left: 14px;
   padding-bottom: 10px;
+  padding-right: 13px;
   box-sizing: border-box;
+
+  &:hover,
+  &:focus {
+    border-color: #bababa;
+    outline: none;
+  }
+
+  &:active {
+    padding-top: 12px;
+    padding-left: 13px;
+    padding-bottom: 9px;
+    padding-right: 12px;
+    outline: none;
+    border: 2px solid #444444;
+  }
 }
 
 .form__comment textarea::placeholder {
@@ -360,6 +393,38 @@
     }
   }
 
+  .form__owner-header::after,
+  .form__comment-header::after,
+  .form__additionally-header::after {
+    top: 22px;
+  }
+
+  .form__owner-header::after {
+    left: 551px;
+  }
+
+  .form__comment-header::after {
+    left: 217px;
+  }
+
+  .form__additionally-header::after {
+    left: 250px;
+  }
+
+  .form__owner-header::before,
+  .form__comment-header:before,
+  .form__additionally-header::before {
+    width: 100vw;
+    position: absolute;
+    content: "";
+    height: 3px;
+    background: $accent-color;
+    top: 22px;
+    left: -810px;
+    overflow: hidden;
+    z-index: -1;
+}
+
   .form__cat-info p,
   .form__owner-info p {
     margin-bottom: 21px;
@@ -431,24 +496,16 @@
     margin-bottom: 75px;
   }
 
+  .form__owner-header {
+    width: auto;
+  }
+
   .form__additionally-header {
-    margin-bottom: 60px;
+    margin-bottom: 67px;
   }
 
   .form__owner-info {
     margin-bottom: 46px;
-  }
-
-  .form__owner-info::before {
-    width: 145px;
-  }
-
-  .form__comment::before {
-    width: 480px;
-  }
-
-  .form__additionally::before {
-    width: 445px;
   }
 
   .form__additionally-checkbox + label::before {
@@ -463,34 +520,31 @@
     top: 7px;
   }
 
-  .form__owner-info::before,
-  .form__comment::before,
-  .form__additionally::before {
-    right: -67px;
-    top: 22px;
-  }
-
-  .form__owner-info::after,
-  .form__comment::after,
-  .form__additionally::after {
-    position: absolute;
-    content: "";
-    width: 30px;
-    height: 3px;
-    background: $accent-color;
-    top: 22px;
-    left: -72px;
-  }
-
   .form__comment textarea {
     width: 631px;
     padding-top: 16px;
     padding-left: 16px;
+    padding-right: 16px;
     padding-bottom: 31px;
+
+    &:hover,
+    &:focus {
+      border-color: #bababa;
+      outline: none;
+    }
+
+    &:active {
+      padding-top: 15px;
+      padding-left: 15px;
+      padding-right: 15px;
+      padding-bottom: 30px;
+      outline: none;
+      border: 2px solid #444444;
+    }
   }
 
   .form__comment {
-    margin-bottom: 64px;
+    margin-bottom: 58px;
   }
 
   .form__button {
@@ -544,43 +598,26 @@
     margin-bottom: 77px;
   }
 
-  .form__owner-info::before {
-    width: 779px;
+  .form__additionally-header::before,
+  .form__comment-header:before,
+  .form__owner-header::before {
+    left: -1631px;
   }
 
-  .form__additionally::before,
-  .form__comment::before,
   .form__owner-info::before {
-    right: -113px;
-    top: 21px;
+    width: 779px;
   }
 
   .form__comment {
     margin-bottom: 70px;
   }
 
-  .form__comment::before {
-    width: 1112px;
-  }
-
   .form__additionally-item {
     width: 186px;
   }
 
-  .form__additionally::before {
-    width: 1079px;
-  }
-
   .form__additionally-header {
     margin-bottom: 60px;
-  }
-
-  .form__owner-info::after,
-  .form__comment::after,
-  .form__additionally::after {
-    width: 70px;
-    top: 21px;
-    left: -109px;
   }
 
   .form__cat-info p,
@@ -591,6 +628,10 @@
   .form__comment textarea {
     width: 1220px;
     padding-left: 19px;
+
+    &:active {
+      padding-left: 18px;
+    }
   }
 
   .form__additionally-item:nth-child(2n-1) {

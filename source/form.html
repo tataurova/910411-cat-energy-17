@@ -92,7 +92,7 @@
           </fieldset>
         </div>
         <fieldset class="form__owner-info">
-          <legend class="form__owner-header">Контактные данные (владельца кота)</legend>
+          <h3 class="form__owner-header">Контактные данные (владельца кота)</h3>
           <div class="wrapper-form-owner">
             <p class="form__owner-email">
               <label class="form__value-email" for="form__email-field">E-mail:*</label>
@@ -105,7 +105,7 @@
             <p class="form__owner-phone">
               <label class="form__value-phone" for="form__phone-field">Телефон:*</label>
               <input class="form__phone-input" id="form__phone-field" type="tel" name="tel" value=""
-                     placeholder="8 (960) 900-60-90">
+                     placeholder="8 (960) 900-60-90" pattern="\d\([0-9]{3}\)[0-9]{3}-[0-9]{2}-[0-9]{2}">
               <svg class="form__icon-phone" width="21" height="21">
                 <use xlink:href="#icon-phone"></use>
               </svg>
@@ -113,7 +113,7 @@
           </div>
         </fieldset>
         <fieldset class="form__comment">
-          <legend class="form__comment-header">Комментарий</legend>
+          <h3 class="form__comment-header">Комментарий</h3>
           <p class="form__comment-info">
             <label class="visually-hidden" for="comment-field">Комментарий</label>
             <textarea rows="7" name="comment" id="comment-field"
@@ -121,7 +121,7 @@
           </p>
         </fieldset>
         <fieldset class="form__additionally">
-          <legend class="form__additionally-header">Дополнительно</legend>
+          <h3 class="form__additionally-header">Дополнительно</h3>
           <ul class="form__additionally-list">
             <li class="form__additionally-item">
               <input class="visually-hidden form__additionally-checkbox" type="checkbox" name="sugar-substitute"
@@ -156,7 +156,7 @@
   <section class="contacts">
     <h2 class="visually-hidden">Как до нас добраться</h2>
     <div class="container">
-      <div class="wrapper-contacts container">
+      <div class="wrapper-contacts">
         <p class="contacts__invite">Приглашаем<br> к сотрудничеству дилеров!</p>
         <address class="contacts__address">
           <p class="contacts__street">ул. Большая Конюшенная, д. 19/8</p>
