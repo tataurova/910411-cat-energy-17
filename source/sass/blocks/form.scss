@@ -28,7 +28,9 @@
   background: #ffffff;
 }
 
-.form__owner-header span {
+.form__owner-header span
+.form__comment-header span,
+.form__additionally-header span {
   display: inline-block;
 }
 

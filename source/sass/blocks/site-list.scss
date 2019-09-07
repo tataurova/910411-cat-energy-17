@@ -52,6 +52,7 @@
   .site-list {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     font-weight: 400;
   }
 
