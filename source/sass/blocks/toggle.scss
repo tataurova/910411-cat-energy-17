@@ -1,0 +1,42 @@
+.toggle {
+  width: 25px;
+  height: 19px;
+  z-index: 2;
+  display: block;
+  cursor: pointer;
+  border: none;
+  background-color: #ffffff;
+  outline: none;
+  padding: 0;
+  position: relative;
+}
+
+.page-header__row--closed .toggle::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 25px;
+  height: 2px;
+  background-color: #111111;
+  box-shadow: 0 8px 0 0 #111111, 0 16px 0 0 #111111;
+}
+
+.page-header__row--opened .toggle {
+  width: 19px;
+  height: 19px;
+  background-image: url("../img/icon-close.svg");
+  background-repeat: no-repeat;
+}
+
+@media (min-width: $tablet-width) {
+  .toggle {
+    display: none;
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .page-header__row--nojs .toggle {
+    display: none;
+  }
+}

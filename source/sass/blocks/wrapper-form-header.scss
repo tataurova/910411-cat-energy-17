@@ -1,0 +1,47 @@
+.wrapper-form-header {
+  display: inline-block;
+}
+
+.wrapper-form-header::after {
+  width: 100vw;
+  position: absolute;
+  content: "";
+  height: 3px;
+  background: $accent-color;
+  top: 14px;
+  left: 0;
+  overflow: hidden;
+  z-index: -1;
+  display: inline-block;
+}
+
+.form__additionally .wrapper-form-header::after {
+  top: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .wrapper-form-header::after {
+    top: 21px;
+  }
+
+  .form__additionally .wrapper-form-header::after {
+    top: 28px;
+  }
+
+  .wrapper-form-header::before {
+    width: 100vw;
+    position: absolute;
+    content: "";
+    height: 3px;
+    background: $accent-color;
+    top: 21px;
+    right: 0;
+    overflow: hidden;
+    z-index: -1;
+    display: inline-block;
+  }
+
+  .form__additionally .wrapper-form-header::before {
+    top: 28px;
+  }
+}

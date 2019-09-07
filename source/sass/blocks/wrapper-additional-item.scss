@@ -1,0 +1,15 @@
+@media (min-width: $tablet-width) {
+  .wrapper-additional-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .wrapper-additional-item {
+    width: 613px;
+    padding-top: 9px;
+    flex-grow: 1;
+  }
+}

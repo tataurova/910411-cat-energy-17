@@ -2,15 +2,15 @@
   display: flex;
   justify-content: space-between;
   padding-top: 28px;
-  padding-bottom: 23px;
+  padding-bottom: 27px;
 }
 
 @media (min-width: $tablet-width) {
   .wrapper-contacts {
-    padding-left: 71px;
-    padding-right: 71px;
-    padding-top: 63px;
-    padding-bottom: 62px;
+    padding-left: 42px;
+    padding-right: 42px;
+    padding-top: 64px;
+    padding-bottom: 55px;
   }
 }
 
@@ -23,8 +23,8 @@
     padding-right: 90px;
     padding-top: 66px;
     padding-bottom: 60px;
-    top: 95px;
-    left: 110px;
+    top: 93px;
     box-sizing: border-box;
+    z-index: 10;
   }
 }

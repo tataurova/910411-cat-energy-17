@@ -1,5 +1,6 @@
 .additional-goods {
-  padding-bottom: 35px;
+  padding-bottom: 34px;
+  padding-top: 25px;
 }
 
 .additional-goods__header {
@@ -18,7 +19,7 @@
   height: 3px;
   content: "";
   background-color: $accent-color;
-  top: 13px;
+  top: 14px;
   right: -20px;
 }
 
@@ -30,8 +31,8 @@
 }
 
 .additional-goods__item {
-  padding-top: 14px;
-  padding-bottom: 16px;
+  padding-top: 13px;
+  padding-bottom: 18px;
   border-top: 1px solid #cdcdcd;
 }
 
@@ -43,7 +44,7 @@
   width: 100%;
   padding: 0;
   border-spacing: 0;
-  margin-bottom: 13px;
+  margin-bottom: 17px;
   font-family: $font-family--text;
   font-size: 14px;
   line-height: 14px;
@@ -54,6 +55,11 @@
   text-align: end;
 }
 
+.additional-goods__button {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
 .additional-goods__name {
   font-family: $font-family--header;
   font-size: 16px;
@@ -62,7 +68,12 @@
   color: #222222;
   text-transform: uppercase;
   margin: 0;
-  margin-bottom: 11px;
+  margin-bottom: 12px;
+}
+
+.additional-goods__field,
+.additional-goods__value {
+  padding: 0;
 }
 
 .additional-goods__about-present {
@@ -72,18 +83,14 @@
   background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
   padding-top: 65px;
-  padding-left: 60px;
-  padding-right: 60px;
+  padding-left: 58px;
+  padding-right: 58px;
   padding-bottom: 27px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-}
-
-.additional-goods__icon-gift {
-  fill: #ffffff;
 }
 
 @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -101,20 +108,40 @@
   text-align: center;
 }
 
-.additional-goods__about-present svg {
+.additional-goods__icon-gift {
   width: 56px;
   height: 61px;
+  fill: #ffffff;
 }
 
 @media (min-width: $tablet-width) {
+  .additional-goods {
+    padding-bottom: 75px;
+    padding-top: 14px;
+  }
+
   .additional-goods__header {
     font-size: 36px;
     line-height: 36px;
+    margin-left: 37px;
+    margin-bottom: 80px;
+    margin-top: 37px;
+  }
+
+  .additional-goods__header::before {
+    position: absolute;
+    width: 28px;
+    height: 3px;
+    content: "";
+    background-color: $accent-color;
+    top: 22px;
+    left: -67px;
   }
 
   .additional-goods__header::after {
-    width: 370px;
-    top: 20px;
+    width: 328px;
+    top: 22px;
+    right: -30px;
   }
 
   .additional-goods__name {
@@ -123,8 +150,19 @@
   }
 
   .additional-goods__price {
+    width: 224px;
     font-size: 16px;
     line-height: 20px;
+    margin-bottom: 0;
+    padding-bottom: 5px;
+  }
+
+  .additional-goods__field {
+    text-align: right;
+  }
+
+  .additional-goods__value {
+    width: 92px;
   }
 
   .additional-goods__button {
@@ -132,6 +170,11 @@
     font-size: 16px;
     line-height: 20px;
     align-self: center;
+    margin-top: 14px;
+  }
+
+  .additional-goods__list {
+    margin-bottom: 69px;
   }
 
   .additional-goods__item {
@@ -141,6 +184,8 @@
     border-right: 1px solid #cdcdcd;
     padding-left: 38px;
     padding-right: 38px;
+    padding-top: 25px;
+    padding-bottom: 27px;
   }
 
   .additional-goods__about-present {
@@ -150,6 +195,14 @@
     background-repeat: no-repeat;
     background-color: $accent-color;
     flex-direction: row;
+    padding-left: 90px;
+    padding-right: 125px;
+    padding-top: 75px;
+    padding-bottom: 75px;
+  }
+
+  .additional-goods__icon-gift {
+    padding-bottom: 9px;
   }
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -160,24 +213,31 @@
   }
 
   .additional-goods__text {
-    width: 159px;
+    width: 161px;
     text-align: left;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .additional-goods {
+    padding-bottom: 17px;
+  }
+
+  .additional-goods__header {
+    margin-left: 0;
+    margin-top: 43px;
+    margin-bottom: 77px;
+  }
+
   .additional-goods__header::after {
-    width: 870px;
+    width: 957px;
+    right: -110px;
   }
 
   .additional-goods__header::before {
-    position: absolute;
-    width: 53px;
-    height: 3px;
-    content: "";
-    background-color: $accent-color;
-    top: 20px;
-    left: -70px;
+    width: 70px;
+    top: 21px;
+    left: -110px;
   }
 
   .additional-goods__about-present {
@@ -187,6 +247,10 @@
     background-repeat: no-repeat;
     background-color: $accent-color;
     flex-direction: column;
+    padding-top: 64px;
+    padding-right: 43px;
+    padding-bottom: 26px;
+    padding-left: 41px;
   }
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -206,17 +270,30 @@
     border-left: none;
     border-right: none;
     justify-content: space-between;
+    padding-left: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
   }
 
   .additional-goods__price {
-    width: 284px;
+    width: 288px;
   }
 
   .additional-goods__button {
     width: 245px;
+    margin-top: 0;
+    margin-left: 37px;
   }
 
   .additional-goods__name {
     width: 160px;
+  }
+
+  .additional-goods__field {
+    text-align: left;
+  }
+
+  .additional-goods__icon-gift {
+    flex-shrink: 1;
   }
 }

@@ -3,6 +3,7 @@
   font-weight: 400;
   color: #111111;
   text-transform: uppercase;
+  overflow: hidden;
 }
 
 .page-form__header {
@@ -40,7 +41,7 @@
   .page-form__header {
     font-size: 60px;
     line-height: 60px;
-    margin-top: 29px;
+    margin-top: 32px;
   }
 
   .page-form__invitation {
@@ -55,10 +56,14 @@
 
 @media (min-width: $desktop-width) {
   .page-form__header {
-    margin-top: 17px;
+    margin-top: 18px;
   }
 
   .page-form__invitation {
     margin-left: 0;
+  }
+
+  .page-form .wrapper-contacts {
+    background-color: #ffffff;
   }
 }

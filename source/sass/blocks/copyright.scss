@@ -5,7 +5,8 @@
   width: 100%;
   align-items: center;
 
-  &:hover .copyright__icon-htmlacademy {
+  &:hover .copyright__icon-htmlacademy,
+  &:focus .copyright__icon-htmlacademy {
     fill: $accent-color;
   }
 
@@ -24,10 +25,12 @@
 
 .copyright__icon-htmlacademy {
   fill: #666666;
+  padding-top: 8px;
 }
 
 @media (min-width: $tablet-width) {
   .copyright {
-    width: 162px;
+    width: 164px;
+    flex-shrink: 0;
   }
 }
