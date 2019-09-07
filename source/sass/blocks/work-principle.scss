@@ -150,7 +150,7 @@
 @media (min-width: $desktop-width) {
   .work-principle {
     padding-top: 75px;
-    padding-bottom: 16px;
+    padding-bottom: 51px;
   }
 
   .work-principle__list {
@@ -159,8 +159,10 @@
     flex-wrap: nowrap;
   }
 
-  .work-principle__item {
-    margin-bottom: 238px;
+  .work-principle__item,
+  .work-principle__item:nth-child(3),
+  .work-principle__item:nth-child(4) {
+    margin-bottom: 0;
   }
 
   .work-principle__item:nth-child(2n-1) {

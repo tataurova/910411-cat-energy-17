@@ -22,39 +22,15 @@
   text-transform: none;
   z-index: 10;
   position: relative;
-  background-color: #ffffff;
-  padding-right: 21px;
-  width: 202px;
   margin: 0;
   margin-bottom: 34px;
+  display: inline-block;
+  background: #ffffff;
+  padding-right: 22px;
 }
 
-.form__owner-header::after,
-.form__comment-header::after,
-.form__additionally-header::after {
-  width: 100vw;
-  position: absolute;
-  content: "";
-  height: 3px;
-  background: $accent-color;
-  top: 14px;
-  overflow: hidden;
-  z-index: -1;
-}
-
-.form__owner-header::after {
-  left: 201px;
-  width: 99px;
-}
-
-.form__comment-header::after {
-  left: 142px;
-  width: 158px;
-}
-
-.form__additionally-header::after {
-  left: 164px;
-  width: 137px;
+.form__owner-header {
+  width: 181px;
 }
 
 .form__additionally-header {
@@ -409,41 +385,6 @@
     }
   }
 
-  .form__owner-header::after,
-  .form__comment-header::after,
-  .form__additionally-header::after {
-    top: 22px;
-  }
-
-  .form__owner-header::after {
-    left: 551px;
-    width: 145px;
-  }
-
-  .form__comment-header::after {
-    left: 217px;
-    width: 479px;
-  }
-
-  .form__additionally-header::after {
-    left: 250px;
-    width: 446px;
-  }
-
-  .form__owner-header::before,
-  .form__comment-header::before,
-  .form__additionally-header::before {
-    width: 30px;
-    position: absolute;
-    content: "";
-    height: 3px;
-    background: $accent-color;
-    top: 22px;
-    right: 265px;
-    overflow: hidden;
-    z-index: -1;
-  }
-
   .form__cat-info p,
   .form__owner-info p {
     margin-bottom: 21px;
@@ -518,6 +459,7 @@
     font-size: 36px;
     line-height: 36px;
     margin-bottom: 75px;
+    padding-right: 36px;
   }
 
   .form__owner-header {
@@ -621,25 +563,6 @@
   .form__comment-header,
   .form__owner-header {
     margin-bottom: 77px;
-  }
-
-  .form__additionally-header::before,
-  .form__comment-header::before,
-  .form__owner-header::before {
-    right: 263px;
-    width: 69px;
-  }
-
-  .form__owner-header::after {
-    width: 778px;
-  }
-
-  .form__comment-header::after {
-    width: 1113px;
-  }
-
-  .form__additionally-header::after {
-    width: 1079px;
   }
 
   .form__owner-info {

@@ -301,20 +301,10 @@
     margin-top: 225px;
   }
 
-  .live-example__pictures-row::after {
-    position: absolute;
-    content: "";
-    background: #eaeaea;
-    width: 50vw;
-    height: 462px;
-    top: 0;
-    left: 50%;
-  }
-
   .live-example__picture-before,
   .live-example__picture-after {
-    top: -206px;
-    left: 46px;
+    top: -203px;
+    left: 15px;
   }
 
   .live-example__picture-before {
@@ -334,15 +324,16 @@
     padding-top: 71px;
     background: #f2f2f2;
     padding-bottom: 75px;
+    background: linear-gradient(to bottom, #fff 205px, #f2f2f2 20%);
+    overflow: hidden;
   }
 
   .live-example__row {
-    flex-direction: row;
+    display: block;
   }
 
   .live-example__header {
-    position: absolute;
-    top: -205px;
+    margin-bottom: 145px;
   }
 
   .live-example__description {
@@ -375,26 +366,28 @@
     margin-right: 64px;
   }
 
-  .live-example__pictures {
-    position: absolute;
-    content: "";
-    right: 0;
-    top: 0;
-  }
-
   .live-example__pictures-row {
-    width: 790px;
+    width: 584px;
     margin-top: 0;
   }
 
-  .live-example__pictures-row::after {
-    left: 39.9%;
+  .live-example__pictures {
+    background: none;
+  }
+
+  .live-example__image {
+    width: 690px;
+  }
+
+  .live-example__picture {
+    width: 690px;
+    height: 493px;
   }
 
   .live-example__picture-before,
   .live-example__picture-after {
-    left: -51px;
-    top: -219px;
+    left: -67px;
+    top: -86px;
   }
 
   .live-example__picture-before {
@@ -406,10 +399,7 @@
   }
 
   .live-example__buttons {
-    position: absolute;
-    content: "";
-    left: 22px;
-    bottom: -3px;
+    margin-left: 12px;
   }
 
   .live-example__button-before,

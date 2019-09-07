@@ -24,7 +24,7 @@
           <img class="page-header__logo-image" src="img/logo-mobile.svg" width="191" height="39" alt="Cat Energy">
         </picture>
       </a>
-        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <button class="toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       </div>
       <nav class="main-nav main-nav--index">
         <ul class="main-nav__list site-list">
@@ -121,66 +121,68 @@
   </div>
   <section class="live-example">
     <div class="container">
-      <div class="live-example__row">
-        <h2 class="live-example__header">Живой пример</h2>
-        <div class="live-example__info">
-          <p class="live-example__description">
-            Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
-            Отличный результат без изнуряющих тренировок! При этом он не менял своих превычек и
-            по-прежнему спит по 16 часов в день.
-          </p>
-          <div class="wrapper-results">
-            <ul class="live-example__results">
-              <li class="live-example__item">
-                <p class="live-example__result">
-                  <span class="live-example__value">5 кг</span>
-                  <span class="live-example__parameter">Снижение веса</span>
-                </p>
-              </li>
-              <li class="live-example__item">
-                <p class="live-example__result">
-                  <span class="live-example__value">60 дней</span>
-                  <span class="live-example__parameter">Затрачено времени</span>
-                </p>
-              </li>
-            </ul>
-            <p class="live-example__total-expenditure">
-              <span class="live-example__expenditure-item">Затраты на питание:</span>
-              <span class="live-example__expenditure-cost">15 000 руб.</span>
+      <div class="wrapper-live-example">
+        <div class="live-example__row">
+          <h2 class="live-example__header">Живой пример</h2>
+          <div class="live-example__info">
+            <p class="live-example__description">
+              Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
+              Отличный результат без изнуряющих тренировок! При этом он не менял своих превычек и
+              по-прежнему спит по 16 часов в день.
             </p>
+            <div class="wrapper-results">
+              <ul class="live-example__results">
+                <li class="live-example__item">
+                  <p class="live-example__result">
+                    <span class="live-example__value">5 кг</span>
+                    <span class="live-example__parameter">Снижение веса</span>
+                  </p>
+                </li>
+                <li class="live-example__item">
+                  <p class="live-example__result">
+                    <span class="live-example__value">60 дней</span>
+                    <span class="live-example__parameter">Затрачено времени</span>
+                  </p>
+                </li>
+              </ul>
+              <p class="live-example__total-expenditure">
+                <span class="live-example__expenditure-item">Затраты на питание:</span>
+                <span class="live-example__expenditure-cost">15 000 руб.</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="live-example__pictures">
+        <div class="live-example__pictures-row">
+          <div class="live-example__picture">
+            <picture class="live-example__picture-before live-example__picture--show">
+              <source type="image/webp" media="(min-width: 1200px)"
+                      srcset="img/before-desktop@1x.webp 1x, img/before-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)"
+                      srcset="img/before-tablet@1x.webp 1x, img/before-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/before-mobile@1x.webp 1x, img/before-mobile@2x.webp 2x">
+              <source media="(min-width: 1200px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
+              <img class="live-example__image" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" width="311" height="232" alt="Кот до снижения веса">
+            </picture>
+            <picture class="live-example__picture-after live-example__picture--show">
+              <source type="image/webp" media="(min-width: 1200px)"
+                      srcset="img/after-desktop@1x.webp 1x, img/after-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)"
+                      srcset="img/after-tablet@1x.webp 1x, img/after-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/after-mobile@1x.webp 1x, img/after-mobile@2x.webp 2x">
+              <source media="(min-width: 1200px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
+              <img class="live-example__image" src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" width="320" height="240" alt="Кот до снижения веса">
+            </picture>
+          </div>
+          <div class="live-example__buttons">
+            <button type="button" class="live-example__button-before">Было</button>
+            <span class="live-example__slider"></span>
+            <button type="button" class="live-example__button-after">Стало</button>
           </div>
         </div>
       </div>
-    </div>
-    <div class="live-example__pictures">
-      <div class="live-example__pictures-row">
-        <div class="live-example__picture">
-          <picture class="live-example__picture-before live-example__picture--show">
-            <source type="image/webp" media="(min-width: 1200px)"
-                    srcset="img/before-desktop@1x.webp 1x, img/before-desktop@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 768px)"
-                    srcset="img/before-tablet@1x.webp 1x, img/before-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="img/before-mobile@1x.webp 1x, img/before-mobile@2x.webp 2x">
-            <source media="(min-width: 1200px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
-            <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
-            <img class="live-example__image" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" width="311" height="232" alt="Кот до снижения веса">
-          </picture>
-          <picture class="live-example__picture-after live-example__picture--show">
-            <source type="image/webp" media="(min-width: 1200px)"
-                    srcset="img/after-desktop@1x.webp 1x, img/after-desktop@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 768px)"
-                    srcset="img/after-tablet@1x.webp 1x, img/after-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="img/after-mobile@1x.webp 1x, img/after-mobile@2x.webp 2x">
-            <source media="(min-width: 1200px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
-            <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
-            <img class="live-example__image" src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" width="320" height="240" alt="Кот до снижения веса">
-          </picture>
-        </div>
-        <div class="live-example__buttons">
-          <button type="button" class="live-example__button-before">Было</button>
-          <span class="live-example__slider"></span>
-          <button type="button" class="live-example__button-after">Стало</button>
-        </div>
       </div>
     </div>
   </section>
@@ -196,8 +198,7 @@
       </div>
     </div>
     <iframe class="contacts__map"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2187.0616439548103!2d30.32073023334655!3d59.93868303570117!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1565432123473!5m2!1sru!2sru"
-            height="360" style="border:0" allowfullscreen=""></iframe>
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2187.0616439548103!2d30.32073023334655!3d59.93868303570117!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1565432123473!5m2!1sru!2sru"></iframe>
   </section>
 </main>
 <footer class="page-footer">
