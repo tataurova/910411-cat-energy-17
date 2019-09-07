@@ -90,21 +90,15 @@
   margin-top: 34px;
 }
 
-.live-example__picture-- {
-  &show {
+.live-example__picture-before,
+.live-example__picture-after {
+  &--show {
     display: block;
   }
 
-  &none {
+  &--none {
     display: none;
   }
-}
-
-.live-example__picture-before,
-.live-example__picture-after {
-  position: absolute;
-  top: 7px;
-  left: 3px;
 }
 
 .live-example__picture-after {
@@ -226,7 +220,7 @@
 
   .live-example__buttons {
     width: 584px;
-    padding-bottom: 71px;
+    padding-bottom: 68px;
     margin-left: 0;
     z-index: 10;
   }
@@ -298,6 +292,8 @@
 
   .live-example__picture-after {
     display: block;
+    position: absolute;
+    clip: rect(auto auto auto 339px);
   }
 
   .live-example__pictures::after {
@@ -317,11 +313,12 @@
   .live-example__pictures-row {
     position: relative;
     min-height: 462px;
-    margin-top: 225px;
+    margin-top: 222px;
   }
 
   .live-example__picture-before,
   .live-example__picture-after {
+    position: absolute;
     top: -203px;
     left: 15px;
   }
@@ -330,29 +327,23 @@
     position: absolute;
     clip: rect(auto 339px auto auto);
   }
-
-  .live-example__picture-after {
-    position: absolute;
-    clip: rect(auto auto auto 339px);
-  }
 }
 
 @media (min-width: $desktop-width) {
   .live-example {
     position: relative;
     padding-top: 68px;
-    background: #f2f2f2;
     padding-bottom: 0;
-    background: linear-gradient(to bottom, #fff 205px, #f2f2f2 20%);
+    background: linear-gradient(to bottom, #ffffff 205px, #f2f2f2 20%);
     overflow: hidden;
   }
 
   .live-example::after {
     position: absolute;
     content: "";
-    width: calc(((100vw - 1300px)/2) + 326px);;
+    width: calc(((100vw - 1300px)/2) + 326px);
     height: 100%;
-    background: linear-gradient(to bottom, #fff 205px, #eaeaea 20%);
+    background: linear-gradient(to bottom, #ffffff 205px, #eaeaea 20%);
     top: 0;
     right: 0;
   }
@@ -432,7 +423,7 @@
 
   .live-example__buttons {
     margin-left: 12px;
-    padding-bottom: 67px;
+    padding-bottom: 69px;
   }
 
   .live-example__button-before,

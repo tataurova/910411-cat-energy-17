@@ -15,9 +15,17 @@
   display: inline-block;
 }
 
+.form__additionally .wrapper-form-header::after {
+  top: 20px;
+}
+
 @media (min-width: $tablet-width) {
   .wrapper-form-header::after {
     top: 21px;
+  }
+
+  .form__additionally .wrapper-form-header::after {
+    top: 28px;
   }
 
   .wrapper-form-header::before {
@@ -31,5 +39,9 @@
     overflow: hidden;
     z-index: -1;
     display: inline-block;
-    }
+  }
+
+  .form__additionally .wrapper-form-header::before {
+    top: 28px;
+  }
 }

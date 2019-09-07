@@ -66,6 +66,7 @@
     padding-right: 13px;
     padding-top: 11px;
     padding-bottom: 11px;
+    box-sizing: border-box;
   }
 
   &:active {
@@ -460,19 +461,13 @@
     font-size: 36px;
     line-height: 36px;
     margin-bottom: 75px;
-    padding-right: 36px;
     margin-left: -41px;
+    padding-right: 38px;
+    padding-left: 38px;
   }
 
   .form__owner-header {
     width: auto;
-  }
-
-  .form__owner-header,
-  .form__comment-header,
-  .form__additionally-header {
-   padding-right: 38px;
-   padding-left: 38px;
   }
 
   .form__additionally-header {
@@ -550,7 +545,7 @@
   .form__nutrition-program {
     width: 570px;
     box-sizing: border-box;
-    margin-bottom: 70px;
+    margin-bottom: 69px;
     padding-bottom: 3px;
   }
 
@@ -577,15 +572,15 @@
   .form__additionally-header span,
   .form__comment-header span,
   .form__owner-header span {
-   padding-right: 44px;
+    padding-right: 44px;
   }
 
   .form__owner-info {
-    margin-bottom: 47px;
+    margin-bottom: 46px;
   }
 
   .form__comment {
-    margin-bottom: 62px;
+    margin-bottom: 58px;
   }
 
   .form__additionally-item {
@@ -604,9 +599,11 @@
   .form__comment textarea {
     width: 1220px;
     padding-left: 19px;
+    padding-top: 15px;
 
     &:active {
       padding-left: 18px;
+      padding-top: 14px;
     }
   }
 

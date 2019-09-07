@@ -11,7 +11,7 @@
   position: relative;
 }
 
-.main-nav--closed .toggle::before {
+.page-header__row--closed .toggle::before {
   content: "";
   position: absolute;
   top: 0;
@@ -22,7 +22,7 @@
   box-shadow: 0 8px 0 0 #111111, 0 16px 0 0 #111111;
 }
 
-.main-nav--opened .toggle {
+.page-header__row--opened .toggle {
   width: 19px;
   height: 19px;
   background-image: url("../img/icon-close.svg");
@@ -36,7 +36,7 @@
 }
 
 @media (max-width: $mobile-width-only) {
-  .main-nav--nojs .toggle {
-   display: none;
+  .page-header__row--nojs .toggle {
+    display: none;
   }
 }

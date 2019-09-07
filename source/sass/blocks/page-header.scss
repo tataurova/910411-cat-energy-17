@@ -44,6 +44,20 @@
   .page-main__title {
     color: #ffffff;
   }
+
+  .page-header__row {
+    &--closed .site-list__item {
+      display: none;
+    }
+
+    &--opened .site-list__item {
+      display: block;
+    }
+
+    &--nojs .site-list__item {
+      display: block;
+    }
+  }
 }
 
 @media (min-width: $tablet-width) {
