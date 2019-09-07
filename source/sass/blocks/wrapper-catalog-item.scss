@@ -4,6 +4,10 @@
   align-items: center;
 }
 
+.catalog__item:last-child .wrapper-catalog-item {
+  flex-direction: column;
+}
+
 @media (min-width: $tablet-width) {
   .wrapper-catalog-item {
     flex-direction: column;
