@@ -288,7 +288,18 @@
   }
 
   .live-example__pictures {
-    background: #f2f2f2;
+    background-color: #f2f2f2;
+    position: relative;
+  }
+
+  .live-example__pictures::after {
+    position: absolute;
+    content: "";
+    width: 50%;
+    height: 100%;
+    background-color: #eaeaea;
+    top: 0;
+    right: 0;
   }
 
   .live-example__picture {
@@ -323,7 +334,7 @@
     position: relative;
     padding-top: 71px;
     background: #f2f2f2;
-    padding-bottom: 75px;
+    padding-bottom: 0;
     background: linear-gradient(to bottom, #fff 205px, #f2f2f2 20%);
     overflow: hidden;
   }
@@ -331,7 +342,7 @@
   .live-example::after {
     position: absolute;
     content: "";
-    width: 30vw;
+    width: calc(((100vw - 1300px)/2) + 326px);;
     height: 100%;
     background: linear-gradient(to bottom, #fff 205px, #eaeaea 20%);
     top: 0;
@@ -410,6 +421,7 @@
 
   .live-example__buttons {
     margin-left: 12px;
+    padding-bottom: 67px;
   }
 
   .live-example__button-before,

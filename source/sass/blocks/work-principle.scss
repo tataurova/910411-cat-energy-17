@@ -72,7 +72,7 @@
 
 @media (min-width: $tablet-width) {
   .work-principle {
-    padding-top: 45px;
+    padding-top: 16px;
     padding-bottom: 27px;
     position: relative;
   }
@@ -149,14 +149,14 @@
 
 @media (min-width: $desktop-width) {
   .work-principle {
-    padding-top: 75px;
+    padding-top: 46px;
     padding-bottom: 51px;
   }
 
   .work-principle__list {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
   }
 
   .work-principle__item,
@@ -167,11 +167,11 @@
 
   .work-principle__item:nth-child(2n-1) {
     width: 216px;
-    margin-right: 116px;
+    margin-right: 109px;
   }
 
   .work-principle__item:nth-child(2n) {
-    width: 256px;
+    width: 245px;
     margin-right: 79px;
   }
 
@@ -179,8 +179,12 @@
     margin-right: 0;
   }
 
+  .work-principle__item:nth-child(n+5) {
+    margin-top: 235px;
+  }
+
   .work-principle__header {
-    margin-bottom: 182px;
+    margin-bottom: 183px;
   }
 
   .work-principle::after {
