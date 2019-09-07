@@ -135,8 +135,8 @@
     margin-bottom: 254px;
   }
 
-  .work-principle__item:nth-child(3),
-  .work-principle__item:nth-child(4) {
+  .work-principle__item:nth-last-child(1),
+  .work-principle__item:nth-last-child(2) {
     margin-bottom: 95px;
   }
 }
@@ -160,8 +160,8 @@
   }
 
   .work-principle__item,
-  .work-principle__item:nth-child(3),
-  .work-principle__item:nth-child(4) {
+  .work-principle__item:nth-last-child(1),
+  .work-principle__item:nth-last-child(2) {
     margin-bottom: 0;
   }
 
